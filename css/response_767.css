@@ -1,0 +1,870 @@
+@media (max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 12px;
+        --font_size_title: 38px;
+        --font_size_title_medium: 24px;
+        --font_size_title_small: 18px;
+    }
+
+
+    .bg_grey
+    {
+        padding: 65px 0;
+    }
+
+
+    .block
+    {
+        margin-bottom: 65px;
+    }
+
+
+    .cont
+    {
+        padding: 0 20px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .close_btn
+    {
+        top: 23px;
+    }
+
+
+    header .logo img
+    {
+        width: 149px;
+        height: 30px;
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header
+    {
+        padding: 12px 0;
+    }
+
+
+    .mob_header .logo img
+    {
+        width: 149px;
+        height: 30px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .block_head.row
+    {
+        gap: 0;
+    }
+
+
+
+    /*-----------------
+        First section
+    -----------------*/
+    .first_section .cont
+    {
+        min-height: 675px;
+        padding-bottom: 100px;
+    }
+
+
+    .first_section .title
+    {
+        width: 100%;
+    }
+
+
+    .first_section .title span:after
+    {
+        bottom: -5px;
+        left: -6px;
+
+        width: 95px;
+        height: 9px;
+    }
+
+
+    .first_section .desc
+    {
+        font-size: 14px;
+
+        width: 100%;
+    }
+
+
+    .first_section .messengers
+    {
+        margin-top: 60px;
+    }
+
+
+    .first_section .scroll_down_btn
+    {
+        height: 68px;
+    }
+
+
+    .first_section .scroll_down_btn .icon
+    {
+        width: 28px;
+        height: 16px;
+    }
+
+
+
+    /*-----------
+        Reels
+    -----------*/
+    .reels
+    {
+        right: 20px;
+        bottom: 20px;
+    }
+
+
+    .reels .close_btn
+    {
+        display: flex;
+    }
+
+
+    .reels .item
+    {
+        width: 100px;
+        height: 100px;
+
+        border-radius: 50%;
+        background: linear-gradient(45deg,  #ffc90c 2%,#ff8b00 27%,#fb0a15 54%,#fd00a1 78%,#e703c3 100%);
+    }
+
+
+    .reels .video
+    {
+        width: calc(100% - 6px);
+        height: calc(100% - 6px);
+
+        border: 3px solid #fff;
+    }
+
+
+    .reels .link
+    {
+        display: none;
+    }
+
+
+    .reels .author
+    {
+        display: none;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .service
+    {
+        min-height: 160px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .bg_grey .about_info
+    {
+        margin-bottom: -25px;
+    }
+
+
+    .about_info .advantages
+    {
+        margin-bottom: -20px;
+        margin-left: 0;
+    }
+
+
+    .about_info .advantages > *
+    {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+
+    .about_info .advantages .icon
+    {
+        width: 35px;
+        height: 35px;
+    }
+
+
+    .about_info .advantages .icon img
+    {
+        width: 19px;
+        height: 19px;
+    }
+
+
+    .about_info .advantages .icon + *
+    {
+        width: calc(100% - 50px);
+    }
+
+
+
+    .about_info .stats
+    {
+        margin-top: 40px;
+    }
+
+
+    .about_info .stats .title
+    {
+        margin-bottom: 20px;
+
+        gap: 16px;
+    }
+
+
+    .about_info .stats .title .icon
+    {
+        width: 10px;
+        height: 17px;
+    }
+
+
+    .about_info .stats .row > *
+    {
+        width: calc(50% - 10px);
+    }
+
+
+    .about_info .stats .item
+    {
+        padding: 15px 10px;
+    }
+
+
+    .about_info .stats .val span
+    {
+        font-size: 30px;
+    }
+
+
+
+    /*--------------
+        Projects
+    --------------*/
+    .projects .block_head .all_link
+    {
+        height: 44px;
+    }
+
+
+
+    /*-----------
+        Steps
+    -----------*/
+    .steps .row
+    {
+        margin-bottom: -10px;
+        margin-left: -10px;
+    }
+
+
+    .steps .row > *
+    {
+        width: calc(50% - 10px);
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+
+
+    .steps .start,
+    .steps .finish
+    {
+        min-height: 218px;
+        padding: 15px 15px 10px;
+    }
+
+
+    .steps .start .desc,
+    .steps .finish .desc
+    {
+        margin-top: 5px;
+    }
+
+
+    .steps .start .icon,
+    .steps .finish .icon
+    {
+        height: 25px;
+    }
+
+
+    .steps .step
+    {
+        min-height: 218px;
+        padding: 15px 15px 10px;
+    }
+
+
+    .steps .step .number
+    {
+        height: 28px;
+        margin-bottom: 15px;
+    }
+
+
+    .steps .step .desc
+    {
+        font-size: 11px;
+        line-height: normal;
+    }
+
+
+    .steps .step .arrow
+    {
+        width: 25px;
+        height: 25px;
+    }
+
+
+    .steps .step .arrow .icon
+    {
+        width: 21px;
+        height: 21px;
+    }
+
+
+
+    /*------------
+        Why we
+    ------------*/
+    .why_we .row
+    {
+        margin-bottom: -15px;
+        margin-left: -15px;
+    }
+
+
+    .why_we .row > *
+    {
+        width: calc(50% - 15px);
+        margin-bottom: 15px;
+        margin-left: 15px;
+    }
+
+
+    .why_we .item
+    {
+        min-height: 260px;
+    }
+
+
+    .why_we .item .link
+    {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        width: 25px;
+        height: 25px;
+        margin: 0;
+    }
+
+
+    .why_we .item .link .icon
+    {
+        width: 21px;
+        height: 21px;
+    }
+
+
+    .why_we .item .name
+    {
+        padding-right: 20px;
+    }
+
+
+    .why_we .item .desc
+    {
+        width: 275px;
+        max-width: 100%;
+    }
+
+
+    .why_we .item .image
+    {
+        width: 172px;
+    }
+
+
+    .why_we .item .image.alignright
+    {
+        right: 0;
+        left: auto;
+    }
+
+
+
+    /*---------------
+        Portfolio
+    ---------------*/
+    .portfolio .head
+    {
+        position: relative;
+
+        margin-bottom: 40px;
+    }
+
+
+    .portfolio .head .block_head .title
+    {
+        padding-right: 79px;
+    }
+
+
+    .portfolio .head .summary
+    {
+        position: absolute;
+        top: 8px;
+        right: 0;
+
+        width: auto;
+        margin: 0;
+    }
+
+
+    .portfolio .head .summary .mob_btn
+    {
+        display: block;
+    }
+
+
+    .portfolio .head .summary .text
+    {
+        position: absolute;
+        z-index: 3;
+        top: 36px;
+        right: 0;
+
+        display: none;
+
+        width: 341px;
+        padding: 10px 15px;
+
+        border-radius: 15px;
+        background: rgba(255, 255, 255, .50);
+
+                backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+    }
+
+
+    .portfolio .head .summary .text .link
+    {
+        display: flex;
+    }
+
+
+    .portfolio .head .summary .text b
+    {
+        display: block;
+
+        margin-bottom: 8px;
+        padding-right: 25px;
+    }
+
+
+    .portfolio .head .summary .text br
+    {
+        display: none;
+    }
+
+
+    .portfolio .project
+    {
+        padding: 10px 10px 20px;
+    }
+
+
+    .portfolio .project .location
+    {
+        font-size: 10px;
+        line-height: 12px;
+
+        top: 20px;
+        left: 20px;
+
+        padding: 4px 8px;
+
+        gap: 4px;
+    }
+
+
+    .portfolio .project .location .icon
+    {
+        width: 11px;
+        height: 11px;
+    }
+
+
+    .portfolio .project .images
+    {
+        margin-bottom: 10px;
+    }
+
+
+    .portfolio .project .images .big
+    {
+        width: 100%;
+    }
+
+
+    .portfolio .project .images .small
+    {
+        align-content: stretch;
+        align-items: stretch;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        width: 100%;
+    }
+
+
+    .portfolio .project .images .image,
+    .portfolio .project .images .big .image
+    {
+        position: relative;
+
+        height: auto;
+        padding-bottom: 77.215%;
+    }
+
+
+    .portfolio .project .images .big .image
+    {
+        padding-bottom: 58.567%;
+    }
+
+
+    .portfolio .project .images a
+    {
+        width: calc(50% - 2px);
+    }
+
+
+    .portfolio .project .images .big a
+    {
+        width: 100%;
+    }
+
+
+    .portfolio .project .images img
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+
+    .portfolio .project .desc
+    {
+        font-size: 10px;
+        line-height: normal;
+    }
+
+
+    .portfolio .project .price
+    {
+        margin-top: 10px;
+    }
+
+
+
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block .data
+    {
+        min-height: 520px;
+        padding: 28px;
+
+        background-position: calc(100% + 200px) calc(50% + 108px);
+    }
+
+
+    .action_block .title
+    {
+        font-size: var(--font_size_title_medium);
+    }
+
+
+    .action_block .desc
+    {
+        width: 292px;
+    }
+
+
+    .action_block .messengers
+    {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+
+        width: 272px;
+        margin: 0;
+
+        transform: translateX(-50%);
+    }
+
+
+    .action_block .person
+    {
+        width: 100%;
+    }
+
+
+    .action_block .person .photo
+    {
+        width: 340px;
+        max-width: 100%;
+        margin-left: auto;
+    }
+
+
+    .action_block .person .info
+    {
+        bottom: 248px;
+        left: 28px;
+
+        width: auto;
+        padding: 0;
+
+        text-align: left;
+        white-space: nowrap;
+
+        border-radius: 0;
+        background: none;
+    }
+
+
+    .action_block .person .name
+    {
+        font-size: 16px;
+        line-height: 125%;
+    }
+
+
+    .action_block .person .phone
+    {
+        display: none;
+    }
+
+
+
+    /*---------------
+        Excursion
+    ---------------*/
+    .excursion .data
+    {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: -20px;
+        padding: 0;
+    }
+
+
+    .excursion .data .info
+    {
+        padding: 28px;
+
+        background: rgba(232, 232, 232, .35);
+    }
+
+
+    .excursion .data .desc
+    {
+        width: 300px;
+        max-width: 100%;
+    }
+
+
+    .excursion .data .messengers > div
+    {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+    .excursion .data .in_progress
+    {
+        font-size: var(--font_size);
+
+        position: absolute;
+        z-index: 5;
+        top: calc(100% + 60vw - 77px);
+        left: 0;
+
+        justify-content: flex-end;
+
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+
+        color: #fff;
+    }
+
+
+    .excursion .data .in_progress .icon
+    {
+        width: 8px;
+        height: 13px;
+        margin-right: 2px;
+    }
+
+
+
+    .excursion .video
+    {
+        width: 100%;
+        height: auto;
+        padding-bottom: 65.294%;
+
+        border-radius: 0 0 20px 20px;
+    }
+
+
+    .excursion .video video
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+
+
+    /*--------------
+        Partners
+    --------------*/
+    .partners .count
+    {
+        width: 124px;
+    }
+
+
+    .partners .count .label
+    {
+        font-size: 12px;
+
+        margin-bottom: 4px;
+    }
+
+
+    .partners .swiper
+    {
+        width: calc(100% - 144px);
+    }
+
+
+    .partners .image
+    {
+        height: 24px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding-top: 48px;
+        padding-bottom: 32px;
+    }
+
+
+
+    footer .logo
+    {
+        margin-bottom: 32px;
+    }
+
+
+    footer .logo img
+    {
+        width: 149px;
+        height: 30px;
+    }
+
+
+
+    footer .contacts
+    {
+        width: 100%;
+    }
+
+
+
+    footer .menu
+    {
+        width: 100%;
+        margin-top: 32px;
+        margin-left: 0;
+    }
+
+
+
+    footer .socials,
+    footer .hr,
+    footer .text
+    {
+        margin-top: 32px;
+    }
+
+
+
+    footer .links
+    {
+        flex-direction: column;
+
+        margin-top: 32px;
+
+        gap: 15px;
+    }
+
+
+
+    footer .copyright
+    {
+        display: none;
+    }
+}

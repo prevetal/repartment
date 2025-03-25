@@ -1,0 +1,186 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 28px;
+        --font_size_title_medium: 20px;
+        --font_size_title_small: 18px;
+    }
+
+
+    .cont
+    {
+        padding: 0 17px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .close_btn
+    {
+        top: 21px;
+    }
+
+
+    header .logo img
+    {
+        width: 139px;
+        height: 28px;
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header .logo img
+    {
+        width: 139px;
+        height: 28px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .title.small
+    {
+        font-size: var(--font_size_title_medium);
+    }
+
+
+    .block_head .title small
+    {
+        font-weight: 200;
+
+        margin-top: 5px;
+
+        text-transform: none;
+    }
+
+
+
+    /*-----------------
+        First section
+    -----------------*/
+    .first_section .cont
+    {
+        padding-bottom: 140px;
+    }
+
+
+
+    .first_section .title
+    {
+        font-size: var(--font_size_title);
+    }
+
+
+    .first_section .title span:after
+    {
+        bottom: -6px;
+        left: -6px;
+
+        width: 107px;
+        height: 10px;
+    }
+
+
+    .first_section .scroll_down_btn
+    {
+        height: 60px;
+    }
+
+
+
+    /*------------
+        Why we
+    ------------*/
+    .why_we .row
+    {
+        margin-left: 0;
+    }
+
+
+    .why_we .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .why_we .item
+    {
+        min-height: 210px;
+    }
+
+
+
+    /*---------------
+        Portfolio
+    ---------------*/
+    .portfolio .head .summary
+    {
+        top: 3px;
+    }
+
+
+    .portfolio .project .price
+    {
+        text-align: right;
+
+        gap: 0;
+    }
+
+
+    .portfolio .project .price .val
+    {
+        line-height: 125%;
+
+        width: 100%;
+    }
+
+
+
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block .data
+    {
+        padding: 28px 20px;
+    }
+
+
+    .action_block .title
+    {
+        font-size: var(--font_size_title);
+    }
+
+
+    .action_block .person .info
+    {
+        left: 20px;
+    }
+
+
+
+    /*---------------
+        Excursion
+    ---------------*/
+    .excursion .data .info
+    {
+        padding: 30px 20px;
+    }
+
+
+    .excursion .data .title
+    {
+        font-size: var(--font_size_title);
+    }
+}

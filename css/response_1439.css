@@ -1,0 +1,75 @@
+@media print,
+(max-width: 1439px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+
+
+
+    /*-----------------
+        First section
+    -----------------*/
+    .first_section .cont
+    {
+        min-height: 650px;
+        padding-bottom: 60px;
+    }
+
+
+    .first_section .scroll_down_btn
+    {
+        width: 80px;
+        height: 80px;
+    }
+
+
+
+    /*-----------
+        Reels
+    -----------*/
+    .reels
+    {
+        right: 40px;
+        bottom: 40px;
+
+        margin-right: 0;
+    }
+
+
+
+    /*---------------
+        Portfolio
+    ---------------*/
+    .portfolio .head .summary
+    {
+        width: 480px;
+    }
+
+
+
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block .data
+    {
+        min-height: 300px;
+        padding: 56px 60px;
+    }
+
+
+    .action_block .person .info
+    {
+        left: -104px;
+    }
+
+
+
+    /*---------------
+        Excursion
+    ---------------*/
+    .excursion .video
+    {
+        height: 464px;
+    }
+}
