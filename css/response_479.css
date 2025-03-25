@@ -66,17 +66,21 @@
     /*---------------
         Page head
     ---------------*/
-    .page_head
+    .page_head .image
     {
-        padding-top: 80px;
-
-        gap: 0;
+        height: 311px;
     }
 
 
-    .page_head .image
+    .page_head .image.mob_hide
     {
         display: none;
+    }
+
+
+    .page_head .image.mob_hide + *
+    {
+        margin-top: 80px;
     }
 
 
@@ -242,5 +246,51 @@
     .excursion .data .title
     {
         font-size: var(--font_size_title);
+    }
+
+
+
+    /*--------------------
+        Portfolio item
+    --------------------*/
+    .portfolio_item .stats
+    {
+        gap: 10px;
+    }
+
+
+    .portfolio_item .stats .item
+    {
+        width: calc(50% - 5px);
+        height: 112px;
+
+        gap: 10px;
+    }
+
+
+    .portfolio_item .gallery
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .portfolio_item .gallery .item,
+    .portfolio_item .gallery .item.big_w
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .portfolio_item .gallery .image,
+    .portfolio_item .gallery .image.big_h
+    {
+        height: 200px;
+    }
+
+    .portfolio_item .gallery .image.mob_big_h
+    {
+        height: 400px;
     }
 }

@@ -614,6 +614,54 @@
 
 
 
+    /*--------------------
+        Portfolio item
+    --------------------*/
+    .portfolio_item .project_name
+    {
+        width: calc(100% - 228px);
+    }
+
+
+
+    .portfolio_item .stats
+    {
+        flex-wrap: wrap;
+    }
+
+
+    .portfolio_item .stats .item
+    {
+        width: calc(50% - 10px);
+        height: 140px;
+    }
+
+
+    .portfolio_item .stats .item:last-child
+    {
+        width: 100%;
+    }
+
+
+    .portfolio_item .stats .val div
+    {
+        font-size: 20px;
+    }
+
+
+
+    .portfolio_item .gallery .image
+    {
+        height: 192px;
+    }
+
+    .portfolio_item .gallery .image.big_h
+    {
+        height: 384px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

@@ -772,6 +772,41 @@
 
 
 
+    /*--------------------
+        Portfolio item
+    --------------------*/
+    .portfolio_item .stats .item
+    {
+        height: 136px;
+    }
+
+
+    .portfolio_item .stats .val div
+    {
+        height: 44px;
+        padding: 4px 16px;
+    }
+
+
+    .portfolio_item .stats .val sup
+    {
+        font-size: 14px;
+    }
+
+
+
+    .portfolio_item .gallery .image
+    {
+        height: 140px;
+    }
+
+    .portfolio_item .gallery .image.big_h
+    {
+        height: 280px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

@@ -831,6 +831,94 @@
 
 
 
+    /*--------------------
+        Portfolio item
+    --------------------*/
+    .portfolio_item .project_name
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+
+    .portfolio_item .messengers
+    {
+        order: 2;
+
+        margin: 40px auto 0;
+    }
+
+
+
+    .portfolio_item .location > div
+    {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+
+    .portfolio_item .desc
+    {
+        width: 100%;
+    }
+
+
+
+    .portfolio_item .stats
+    {
+        width: 100%;
+    }
+
+
+    .portfolio_item .stats .item
+    {
+        padding: 15px 10px;
+    }
+
+
+    .portfolio_item .stats .val span
+    {
+        font-size: 30px;
+    }
+
+
+    .portfolio_item .stats .val sup
+    {
+        font-size: 16px;
+    }
+
+
+
+    .portfolio_item .tags
+    {
+        justify-content: center;
+    }
+
+
+
+    .portfolio_item .gallery
+    {
+        order: 3;
+
+        margin-top: 40px;
+    }
+
+
+    .portfolio_item .gallery .image
+    {
+        height: 88px;
+    }
+
+    .portfolio_item .gallery .image.big_h
+    {
+        height: 176px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
