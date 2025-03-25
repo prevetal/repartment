@@ -42,6 +42,16 @@
 
 
 
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination
+    {
+        margin-top: 40px;
+    }
+
+
+
     /*---------------
         Accordion
     ---------------*/
@@ -122,6 +132,22 @@
     header .location
     {
         display: none;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        gap: 40px;
+    }
+
+
+    .page_head .image
+    {
+        height: 260px;
     }
 
 
@@ -381,6 +407,12 @@
     }
 
 
+    .portfolio .filter.center
+    {
+        margin-bottom: 40px;
+    }
+
+
     .portfolio .filter.pad_r
     {
         padding-right: 138px;
@@ -426,6 +458,12 @@
     }
 
 
+    .portfolio .project .info .col
+    {
+        width: calc(100% - 144px);
+    }
+
+
     .portfolio .project .name
     {
         font-size: 18px;
@@ -435,6 +473,12 @@
     .portfolio .project .price .val
     {
         font-size: 18px;
+    }
+
+
+    .portfolio .project .link
+    {
+        width: 140px;
     }
 
 

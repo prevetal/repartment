@@ -300,6 +300,22 @@
 
 
 
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        gap: 24px;
+    }
+
+
+    .page_head .image
+    {
+        height: 280px;
+    }
+
+
+
     /*----------------
         Block head
     ----------------*/
@@ -547,7 +563,8 @@
 
 
 
-    .portfolio .filter
+    .portfolio .filter,
+    .portfolio .filter.center
     {
         justify-content: center;
 
@@ -567,6 +584,22 @@
     .portfolio .swiper-scrollbar
     {
         display: block;
+    }
+
+
+
+    .portfolio .row
+    {
+        margin-bottom: -24px;
+        margin-left: 0;
+    }
+
+
+    .portfolio .row > *
+    {
+        width: 100%;
+        margin-bottom: 24px;
+        margin-left: 0;
     }
 
 
@@ -605,6 +638,18 @@
     {
         font-size: 16px;
         line-height: 125%;
+    }
+
+
+    .portfolio .project .info .col
+    {
+        width: calc(100% - 170px);
+    }
+
+
+    .portfolio .project .link
+    {
+        width: 160px;
     }
 
 

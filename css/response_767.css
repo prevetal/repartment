@@ -65,6 +65,22 @@
 
 
 
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        gap: 20px;
+    }
+
+
+    .page_head .image
+    {
+        height: 220px;
+    }
+
+
+
     /*----------------
         Block head
     ----------------*/
@@ -509,6 +525,7 @@
     }
 
 
+
     .portfolio .project
     {
         padding: 10px 10px 20px;
@@ -605,7 +622,19 @@
 
     .portfolio .project .price
     {
-        margin-top: 10px;
+        padding-top: 10px;
+    }
+
+
+    .portfolio .project .info .col
+    {
+        width: calc(100% - 150px);
+    }
+
+
+    .portfolio .project .link
+    {
+        width: 140px;
     }
 
 

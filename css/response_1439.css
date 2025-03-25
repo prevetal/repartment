@@ -1,9 +1,21 @@
 @media print,
 (max-width: 1439px)
 {
-    /*-------------------
-        Global styles
-    -------------------*/
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        margin-bottom: 48px;
+
+        gap: 48px;
+    }
+
+
+    .page_head .image
+    {
+        height: 300px;
+    }
 
 
 

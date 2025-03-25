@@ -18,6 +18,23 @@
 
 
 
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination
+    {
+        margin-top: 24px;
+    }
+
+
+    .pagination a
+    {
+        width: 35px;
+        height: 35px;
+    }
+
+
+
     /*------------
         Header
     ------------*/
@@ -42,6 +59,24 @@
     {
         width: 139px;
         height: 28px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        padding-top: 80px;
+
+        gap: 0;
+    }
+
+
+    .page_head .image
+    {
+        display: none;
     }
 
 
@@ -131,6 +166,18 @@
     }
 
 
+    .portfolio .row
+    {
+        margin-bottom: -17px;
+    }
+
+
+    .portfolio .row > *
+    {
+        margin-bottom: 17px;
+    }
+
+
     .portfolio .project .price
     {
         text-align: right;
@@ -144,6 +191,19 @@
         line-height: 125%;
 
         width: 100%;
+    }
+
+
+    .portfolio .project .info .col
+    {
+        width: 100%;
+    }
+
+
+    .portfolio .project .link
+    {
+        width: 100%;
+        margin-top: 16px;
     }
 
 
