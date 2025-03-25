@@ -1066,28 +1066,28 @@
 							</div>
 						</div>
 
-						<div class="filter pad_r">
-							<button class="btn active">
+						<div class="filter filter_slider pad_r">
+							<button class="btn" data-filter="furniture">
 								<span>Дизайн мебели</span>
 								<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
 							</button>
 
-							<button class="btn active">
+							<button class="btn" data-filter="houses">
 								<span>Дизайн домов и коттеджей</span>
 								<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
 							</button>
 
-							<button class="btn">
+							<button class="btn" data-filter="offices">
 								<span>Дизайн офисов</span>
 								<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
 							</button>
 
-							<button class="btn">
+							<button class="btn" data-filter="elite">
 								<span>Элитный дизайн</span>
 								<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
 							</button>
 
-							<button class="btn">
+							<button class="btn" data-filter="engineering">
 								<span>Инженерные проекты</span>
 								<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
 							</button>
@@ -1095,7 +1095,7 @@
 
 						<div class="swiper">
 							<div class="swiper-wrapper">
-								<div class="swiper-slide">
+								<div class="swiper-slide" data-filter="furniture">
 									<div class="project">
 										<div class="location">
 											<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
@@ -1144,7 +1144,7 @@
 									</div>
 								</div>
 
-								<div class="swiper-slide">
+								<div class="swiper-slide" data-filter="houses">
 									<div class="project">
 										<div class="location">
 											<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
@@ -1193,7 +1193,7 @@
 									</div>
 								</div>
 
-								<div class="swiper-slide">
+								<div class="swiper-slide" data-filter="offices">
 									<div class="project">
 										<div class="location">
 											<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
@@ -1242,7 +1242,7 @@
 									</div>
 								</div>
 
-								<div class="swiper-slide">
+								<div class="swiper-slide" data-filter="elite">
 									<div class="project">
 										<div class="location">
 											<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
@@ -1291,7 +1291,7 @@
 									</div>
 								</div>
 
-								<div class="swiper-slide">
+								<div class="swiper-slide" data-filter="engineering">
 									<div class="project">
 										<div class="location">
 											<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
@@ -1340,7 +1340,7 @@
 									</div>
 								</div>
 
-								<div class="swiper-slide">
+								<div class="swiper-slide" data-filter="furniture">
 									<div class="project">
 										<div class="location">
 											<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
@@ -1349,7 +1349,56 @@
 
 										<div class="images">
 											<div class="big">
-												<a href="images/tmp/portfolio_project_big_image2.webp" class="fancy_img" data-fancybox="project6">
+												<a href="images/tmp/portfolio_project_big_image.webp" class="fancy_img" data-fancybox="project1">
+													<picture class="image">
+														<source srcset="images/tmp/portfolio_project_big_image.webp" type="image/webp">
+
+														<img src="images/tmp/portfolio_project_big_image.jpg" alt="" loading="lazy">
+													</picture>
+												</a>
+											</div>
+
+											<div class="small">
+												<a href="images/tmp/portfolio_project_image1.webp" class="fancy_img" data-fancybox="project1">
+													<picture class="image">
+														<source srcset="images/tmp/portfolio_project_image1.webp" type="image/webp">
+
+														<img src="images/tmp/portfolio_project_image1.jpg" alt="" loading="lazy">
+													</picture>
+												</a>
+
+												<a href="images/tmp/portfolio_project_image2.webp" class="fancy_img" data-fancybox="project1">
+													<picture class="image">
+														<source srcset="images/tmp/portfolio_project_image2.webp" type="image/webp">
+
+														<img src="images/tmp/portfolio_project_image2.jpg" alt="" loading="lazy">
+													</picture>
+												</a>
+											</div>
+										</div>
+
+										<div class="name">ЖК Мичуринский парк</div>
+
+										<div class="desc">Мы реализовали дизайн-проект и ремонт в ЖК "Мичуринский парк" в стиле минимализм. Пространство 69 м² оформлено с акцентом на функциональность, эстетику и комфорт: светлые тона, натуральные материалы, встроенная мебель и продуманное освещение создают атмосферу уюта и гармонии.</div>
+
+										<div class="price">
+											<div class="label">Стоимость проекта <span>под ключ</span>:</div>
+
+											<div class="val">2 245 875₽</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide" data-filter="houses">
+									<div class="project">
+										<div class="location">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
+											<span>Москва</span>
+										</div>
+
+										<div class="images">
+											<div class="big">
+												<a href="images/tmp/portfolio_project_big_image2.webp" class="fancy_img" data-fancybox="project2">
 													<picture class="image">
 														<source srcset="images/tmp/portfolio_project_big_image2.webp" type="image/webp">
 
@@ -1359,7 +1408,7 @@
 											</div>
 
 											<div class="small">
-												<a href="images/tmp/portfolio_project_image3.webp" class="fancy_img" data-fancybox="project6">
+												<a href="images/tmp/portfolio_project_image3.webp" class="fancy_img" data-fancybox="project2">
 													<picture class="image">
 														<source srcset="images/tmp/portfolio_project_image3.webp" type="image/webp">
 
@@ -1367,7 +1416,7 @@
 													</picture>
 												</a>
 
-												<a href="images/tmp/portfolio_project_image4.webp" class="fancy_img" data-fancybox="project6">
+												<a href="images/tmp/portfolio_project_image4.webp" class="fancy_img" data-fancybox="project2">
 													<picture class="image">
 														<source srcset="images/tmp/portfolio_project_image4.webp" type="image/webp">
 
@@ -1385,6 +1434,398 @@
 											<div class="label">Стоимость проекта <span>под ключ</span>:</div>
 
 											<div class="val">1 245 875₽</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide" data-filter="offices">
+									<div class="project">
+										<div class="location">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
+											<span>Москва</span>
+										</div>
+
+										<div class="images">
+											<div class="big">
+												<a href="images/tmp/portfolio_project_big_image.webp" class="fancy_img" data-fancybox="project3">
+													<picture class="image">
+														<source srcset="images/tmp/portfolio_project_big_image.webp" type="image/webp">
+
+														<img src="images/tmp/portfolio_project_big_image.jpg" alt="" loading="lazy">
+													</picture>
+												</a>
+											</div>
+
+											<div class="small">
+												<a href="images/tmp/portfolio_project_image1.webp" class="fancy_img" data-fancybox="project3">
+													<picture class="image">
+														<source srcset="images/tmp/portfolio_project_image1.webp" type="image/webp">
+
+														<img src="images/tmp/portfolio_project_image1.jpg" alt="" loading="lazy">
+													</picture>
+												</a>
+
+												<a href="images/tmp/portfolio_project_image2.webp" class="fancy_img" data-fancybox="project3">
+													<picture class="image">
+														<source srcset="images/tmp/portfolio_project_image2.webp" type="image/webp">
+
+														<img src="images/tmp/portfolio_project_image2.jpg" alt="" loading="lazy">
+													</picture>
+												</a>
+											</div>
+										</div>
+
+										<div class="name">ЖК Мичуринский парк</div>
+
+										<div class="desc">Мы реализовали дизайн-проект и ремонт в ЖК "Мичуринский парк" в стиле минимализм. Пространство 69 м² оформлено с акцентом на функциональность, эстетику и комфорт: светлые тона, натуральные материалы, встроенная мебель и продуманное освещение создают атмосферу уюта и гармонии.</div>
+
+										<div class="price">
+											<div class="label">Стоимость проекта <span>под ключ</span>:</div>
+
+											<div class="val">2 245 875₽</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide" data-filter="elite">
+									<div class="project">
+										<div class="location">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
+											<span>Москва</span>
+										</div>
+
+										<div class="images">
+											<div class="big">
+												<a href="images/tmp/portfolio_project_big_image2.webp" class="fancy_img" data-fancybox="project4">
+													<picture class="image">
+														<source srcset="images/tmp/portfolio_project_big_image2.webp" type="image/webp">
+
+														<img src="images/tmp/portfolio_project_big_image2.jpg" alt="" loading="lazy">
+													</picture>
+												</a>
+											</div>
+
+											<div class="small">
+												<a href="images/tmp/portfolio_project_image3.webp" class="fancy_img" data-fancybox="project4">
+													<picture class="image">
+														<source srcset="images/tmp/portfolio_project_image3.webp" type="image/webp">
+
+														<img src="images/tmp/portfolio_project_image3.jpg" alt="" loading="lazy">
+													</picture>
+												</a>
+
+												<a href="images/tmp/portfolio_project_image4.webp" class="fancy_img" data-fancybox="project4">
+													<picture class="image">
+														<source srcset="images/tmp/portfolio_project_image4.webp" type="image/webp">
+
+														<img src="images/tmp/portfolio_project_image4.jpg" alt="" loading="lazy">
+													</picture>
+												</a>
+											</div>
+										</div>
+
+										<div class="name">ЖК Мичуринский парк</div>
+
+										<div class="desc">Мы реализовали дизайн-проект и ремонт в ЖК "Мичуринский парк" в стиле минимализм. Пространство 69 м² оформлено с акцентом на функциональность, эстетику и комфорт: светлые тона, натуральные материалы, встроенная мебель и продуманное освещение создают атмосферу уюта и гармонии.</div>
+
+										<div class="price">
+											<div class="label">Стоимость проекта <span>под ключ</span>:</div>
+
+											<div class="val">1 245 875₽</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide" data-filter="engineering">
+									<div class="project">
+										<div class="location">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
+											<span>Москва</span>
+										</div>
+
+										<div class="images">
+											<div class="big">
+												<a href="images/tmp/portfolio_project_big_image.webp" class="fancy_img" data-fancybox="project5">
+													<picture class="image">
+														<source srcset="images/tmp/portfolio_project_big_image.webp" type="image/webp">
+
+														<img src="images/tmp/portfolio_project_big_image.jpg" alt="" loading="lazy">
+													</picture>
+												</a>
+											</div>
+
+											<div class="small">
+												<a href="images/tmp/portfolio_project_image1.webp" class="fancy_img" data-fancybox="project5">
+													<picture class="image">
+														<source srcset="images/tmp/portfolio_project_image1.webp" type="image/webp">
+
+														<img src="images/tmp/portfolio_project_image1.jpg" alt="" loading="lazy">
+													</picture>
+												</a>
+
+												<a href="images/tmp/portfolio_project_image2.webp" class="fancy_img" data-fancybox="project5">
+													<picture class="image">
+														<source srcset="images/tmp/portfolio_project_image2.webp" type="image/webp">
+
+														<img src="images/tmp/portfolio_project_image2.jpg" alt="" loading="lazy">
+													</picture>
+												</a>
+											</div>
+										</div>
+
+										<div class="name">ЖК Мичуринский парк</div>
+
+										<div class="desc">Мы реализовали дизайн-проект и ремонт в ЖК "Мичуринский парк" в стиле минимализм. Пространство 69 м² оформлено с акцентом на функциональность, эстетику и комфорт: светлые тона, натуральные материалы, встроенная мебель и продуманное освещение создают атмосферу уюта и гармонии.</div>
+
+										<div class="price">
+											<div class="label">Стоимость проекта <span>под ключ</span>:</div>
+
+											<div class="val">2 245 875₽</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide" data-filter="furniture">
+									<div class="project">
+										<div class="location">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
+											<span>Москва</span>
+										</div>
+
+										<div class="images">
+											<div class="big">
+												<a href="images/tmp/portfolio_project_big_image.webp" class="fancy_img" data-fancybox="project1">
+													<picture class="image">
+														<source srcset="images/tmp/portfolio_project_big_image.webp" type="image/webp">
+
+														<img src="images/tmp/portfolio_project_big_image.jpg" alt="" loading="lazy">
+													</picture>
+												</a>
+											</div>
+
+											<div class="small">
+												<a href="images/tmp/portfolio_project_image1.webp" class="fancy_img" data-fancybox="project1">
+													<picture class="image">
+														<source srcset="images/tmp/portfolio_project_image1.webp" type="image/webp">
+
+														<img src="images/tmp/portfolio_project_image1.jpg" alt="" loading="lazy">
+													</picture>
+												</a>
+
+												<a href="images/tmp/portfolio_project_image2.webp" class="fancy_img" data-fancybox="project1">
+													<picture class="image">
+														<source srcset="images/tmp/portfolio_project_image2.webp" type="image/webp">
+
+														<img src="images/tmp/portfolio_project_image2.jpg" alt="" loading="lazy">
+													</picture>
+												</a>
+											</div>
+										</div>
+
+										<div class="name">ЖК Мичуринский парк</div>
+
+										<div class="desc">Мы реализовали дизайн-проект и ремонт в ЖК "Мичуринский парк" в стиле минимализм. Пространство 69 м² оформлено с акцентом на функциональность, эстетику и комфорт: светлые тона, натуральные материалы, встроенная мебель и продуманное освещение создают атмосферу уюта и гармонии.</div>
+
+										<div class="price">
+											<div class="label">Стоимость проекта <span>под ключ</span>:</div>
+
+											<div class="val">2 245 875₽</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide" data-filter="houses">
+									<div class="project">
+										<div class="location">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
+											<span>Москва</span>
+										</div>
+
+										<div class="images">
+											<div class="big">
+												<a href="images/tmp/portfolio_project_big_image2.webp" class="fancy_img" data-fancybox="project2">
+													<picture class="image">
+														<source srcset="images/tmp/portfolio_project_big_image2.webp" type="image/webp">
+
+														<img src="images/tmp/portfolio_project_big_image2.jpg" alt="" loading="lazy">
+													</picture>
+												</a>
+											</div>
+
+											<div class="small">
+												<a href="images/tmp/portfolio_project_image3.webp" class="fancy_img" data-fancybox="project2">
+													<picture class="image">
+														<source srcset="images/tmp/portfolio_project_image3.webp" type="image/webp">
+
+														<img src="images/tmp/portfolio_project_image3.jpg" alt="" loading="lazy">
+													</picture>
+												</a>
+
+												<a href="images/tmp/portfolio_project_image4.webp" class="fancy_img" data-fancybox="project2">
+													<picture class="image">
+														<source srcset="images/tmp/portfolio_project_image4.webp" type="image/webp">
+
+														<img src="images/tmp/portfolio_project_image4.jpg" alt="" loading="lazy">
+													</picture>
+												</a>
+											</div>
+										</div>
+
+										<div class="name">ЖК Мичуринский парк</div>
+
+										<div class="desc">Мы реализовали дизайн-проект и ремонт в ЖК "Мичуринский парк" в стиле минимализм. Пространство 69 м² оформлено с акцентом на функциональность, эстетику и комфорт: светлые тона, натуральные материалы, встроенная мебель и продуманное освещение создают атмосферу уюта и гармонии.</div>
+
+										<div class="price">
+											<div class="label">Стоимость проекта <span>под ключ</span>:</div>
+
+											<div class="val">1 245 875₽</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide" data-filter="offices">
+									<div class="project">
+										<div class="location">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
+											<span>Москва</span>
+										</div>
+
+										<div class="images">
+											<div class="big">
+												<a href="images/tmp/portfolio_project_big_image.webp" class="fancy_img" data-fancybox="project3">
+													<picture class="image">
+														<source srcset="images/tmp/portfolio_project_big_image.webp" type="image/webp">
+
+														<img src="images/tmp/portfolio_project_big_image.jpg" alt="" loading="lazy">
+													</picture>
+												</a>
+											</div>
+
+											<div class="small">
+												<a href="images/tmp/portfolio_project_image1.webp" class="fancy_img" data-fancybox="project3">
+													<picture class="image">
+														<source srcset="images/tmp/portfolio_project_image1.webp" type="image/webp">
+
+														<img src="images/tmp/portfolio_project_image1.jpg" alt="" loading="lazy">
+													</picture>
+												</a>
+
+												<a href="images/tmp/portfolio_project_image2.webp" class="fancy_img" data-fancybox="project3">
+													<picture class="image">
+														<source srcset="images/tmp/portfolio_project_image2.webp" type="image/webp">
+
+														<img src="images/tmp/portfolio_project_image2.jpg" alt="" loading="lazy">
+													</picture>
+												</a>
+											</div>
+										</div>
+
+										<div class="name">ЖК Мичуринский парк</div>
+
+										<div class="desc">Мы реализовали дизайн-проект и ремонт в ЖК "Мичуринский парк" в стиле минимализм. Пространство 69 м² оформлено с акцентом на функциональность, эстетику и комфорт: светлые тона, натуральные материалы, встроенная мебель и продуманное освещение создают атмосферу уюта и гармонии.</div>
+
+										<div class="price">
+											<div class="label">Стоимость проекта <span>под ключ</span>:</div>
+
+											<div class="val">2 245 875₽</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide" data-filter="elite">
+									<div class="project">
+										<div class="location">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
+											<span>Москва</span>
+										</div>
+
+										<div class="images">
+											<div class="big">
+												<a href="images/tmp/portfolio_project_big_image2.webp" class="fancy_img" data-fancybox="project4">
+													<picture class="image">
+														<source srcset="images/tmp/portfolio_project_big_image2.webp" type="image/webp">
+
+														<img src="images/tmp/portfolio_project_big_image2.jpg" alt="" loading="lazy">
+													</picture>
+												</a>
+											</div>
+
+											<div class="small">
+												<a href="images/tmp/portfolio_project_image3.webp" class="fancy_img" data-fancybox="project4">
+													<picture class="image">
+														<source srcset="images/tmp/portfolio_project_image3.webp" type="image/webp">
+
+														<img src="images/tmp/portfolio_project_image3.jpg" alt="" loading="lazy">
+													</picture>
+												</a>
+
+												<a href="images/tmp/portfolio_project_image4.webp" class="fancy_img" data-fancybox="project4">
+													<picture class="image">
+														<source srcset="images/tmp/portfolio_project_image4.webp" type="image/webp">
+
+														<img src="images/tmp/portfolio_project_image4.jpg" alt="" loading="lazy">
+													</picture>
+												</a>
+											</div>
+										</div>
+
+										<div class="name">ЖК Мичуринский парк</div>
+
+										<div class="desc">Мы реализовали дизайн-проект и ремонт в ЖК "Мичуринский парк" в стиле минимализм. Пространство 69 м² оформлено с акцентом на функциональность, эстетику и комфорт: светлые тона, натуральные материалы, встроенная мебель и продуманное освещение создают атмосферу уюта и гармонии.</div>
+
+										<div class="price">
+											<div class="label">Стоимость проекта <span>под ключ</span>:</div>
+
+											<div class="val">1 245 875₽</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide" data-filter="engineering">
+									<div class="project">
+										<div class="location">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
+											<span>Москва</span>
+										</div>
+
+										<div class="images">
+											<div class="big">
+												<a href="images/tmp/portfolio_project_big_image.webp" class="fancy_img" data-fancybox="project5">
+													<picture class="image">
+														<source srcset="images/tmp/portfolio_project_big_image.webp" type="image/webp">
+
+														<img src="images/tmp/portfolio_project_big_image.jpg" alt="" loading="lazy">
+													</picture>
+												</a>
+											</div>
+
+											<div class="small">
+												<a href="images/tmp/portfolio_project_image1.webp" class="fancy_img" data-fancybox="project5">
+													<picture class="image">
+														<source srcset="images/tmp/portfolio_project_image1.webp" type="image/webp">
+
+														<img src="images/tmp/portfolio_project_image1.jpg" alt="" loading="lazy">
+													</picture>
+												</a>
+
+												<a href="images/tmp/portfolio_project_image2.webp" class="fancy_img" data-fancybox="project5">
+													<picture class="image">
+														<source srcset="images/tmp/portfolio_project_image2.webp" type="image/webp">
+
+														<img src="images/tmp/portfolio_project_image2.jpg" alt="" loading="lazy">
+													</picture>
+												</a>
+											</div>
+										</div>
+
+										<div class="name">ЖК Мичуринский парк</div>
+
+										<div class="desc">Мы реализовали дизайн-проект и ремонт в ЖК "Мичуринский парк" в стиле минимализм. Пространство 69 м² оформлено с акцентом на функциональность, эстетику и комфорт: светлые тона, натуральные материалы, встроенная мебель и продуманное освещение создают атмосферу уюта и гармонии.</div>
+
+										<div class="price">
+											<div class="label">Стоимость проекта <span>под ключ</span>:</div>
+
+											<div class="val">2 245 875₽</div>
 										</div>
 									</div>
 								</div>

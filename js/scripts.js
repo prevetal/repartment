@@ -124,6 +124,35 @@ document.addEventListener('DOMContentLoaded', function() {
 		}
 
 		portfolioSliders.push(new Swiper('.portfolio_s' + i, options))
+
+
+		// Filter
+		$('.portfolio .filter_slider .btn').click(function(e) {
+			e.preventDefault()
+
+			let filters = []
+
+			// Toggle button class
+			$(this).toggleClass('active')
+
+			// Get filters
+			$('.portfolio .filter_slider .btn').each(function() {
+				if ($(this).hasClass('active')) {
+					filters.push($(this).data('filter'))
+				}
+			})
+
+			// Hide all slides
+			$('.portfolio .swiper-slide').hide()
+
+			// Show filtered slides
+			filters.length
+				? filters.forEach(el => $('.portfolio .swiper-slide[data-filter="'+ el +'"]').show())
+				: $('.portfolio .swiper-slide').show()
+
+			// Update slider
+			portfolioSliders[i].updateSlides()
+		})
 	})
 
 
