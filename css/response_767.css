@@ -436,16 +436,63 @@
     }
 
 
-    .why_we .item .image
+    .why_we .item .desc br
     {
-        width: 172px;
+        display: block;
     }
 
 
-    .why_we .item .image.alignright
+    .why_we .item .image1
     {
-        right: 0;
+        bottom: -40px;
+        left: -48px;
+    }
+
+    .why_we .item .image2
+    {
+        right: -33px;
         left: auto;
+    }
+
+    .why_we .item .image3
+    {
+        bottom: -8px;
+        left: -26px;
+    }
+
+    .why_we .item .image4
+    {
+        right: -10px;
+        bottom: -80px;
+    }
+
+    .why_we .item .image1 img
+    {
+        width: 234px;
+        height: 156px;
+    }
+
+    .why_we .item .image2 img
+    {
+        display: block;
+
+        width: 234px;
+        height: 156px;
+        margin-left: auto;
+
+        transform: scale(-1, 1);
+    }
+
+    .why_we .item .image3 img
+    {
+        width: 196px;
+        height: 127px;
+    }
+
+    .why_we .item .image4 img
+    {
+        width: 204px;
+        height: 306px;
     }
 
 
@@ -464,64 +511,6 @@
     .portfolio .head .block_head .title
     {
         padding-right: 79px;
-    }
-
-
-    .portfolio .head .summary
-    {
-        position: absolute;
-        top: 8px;
-        right: 0;
-
-        width: auto;
-        margin: 0;
-    }
-
-
-    .portfolio .head .summary .mob_btn
-    {
-        display: block;
-    }
-
-
-    .portfolio .head .summary .text
-    {
-        position: absolute;
-        z-index: 3;
-        top: 36px;
-        right: 0;
-
-        display: none;
-
-        width: 341px;
-        padding: 10px 15px;
-
-        border-radius: 15px;
-        background: rgba(255, 255, 255, .50);
-
-                backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-    }
-
-
-    .portfolio .head .summary .text .link
-    {
-        display: flex;
-    }
-
-
-    .portfolio .head .summary .text b
-    {
-        display: block;
-
-        margin-bottom: 8px;
-        padding-right: 25px;
-    }
-
-
-    .portfolio .head .summary .text br
-    {
-        display: none;
     }
 
 
@@ -735,7 +724,11 @@
     .excursion .data .info
     {
         padding: 28px;
+    }
 
+
+    .excursion .data .info:before
+    {
         background: rgba(232, 232, 232, .35);
     }
 

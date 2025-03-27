@@ -176,6 +176,12 @@
     /*-----------------
         First section
     -----------------*/
+    .first_section .cont
+    {
+        height: var(--first_section_height);
+    }
+
+
     .first_section .title
     {
         width: 724px;
@@ -369,9 +375,52 @@
     }
 
 
-    .why_we .item .image img
+    .why_we .item .image1
     {
-        max-width: 85%;
+        bottom: -40px;
+        left: -88px;
+    }
+
+    .why_we .item .image2
+    {
+        bottom: 0;
+        left: -48px;
+    }
+
+    .why_we .item .image3
+    {
+        bottom: 0;
+        left: -44px;
+    }
+
+    .why_we .item .image4
+    {
+        bottom: -92px;
+    }
+
+
+    .why_we .item .image1 img
+    {
+        width: 308px;
+        height: 205px;
+    }
+
+    .why_we .item .image2 img
+    {
+        width: 272px;
+        height: 182px;
+    }
+
+    .why_we .item .image3 img
+    {
+        width: 236px;
+        height: 154px;
+    }
+
+    .why_we .item .image4 img
+    {
+        width: 236px;
+        height: 354px;
     }
 
 

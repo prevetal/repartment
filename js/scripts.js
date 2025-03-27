@@ -329,13 +329,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 			if (is_touch_device()) $('body').css('cursor', 'default')
 		}
-
-		if ($(e.target).closest('.summary').length === 0 && WW < 768) {
-			$('.portfolio .head .summary .mob_btn').removeClass('active')
-			$('.portfolio .head .summary .text').fadeOut(200)
-
-			if (is_touch_device()) $('body').css('cursor', 'default')
-		}
 	})
 
 
@@ -358,24 +351,16 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 
 
-	// Portfolio - Mob. summary
-	$('.portfolio .head .summary .mob_btn').click(function(e) {
-		e.preventDefault()
-
-		$(this).toggleClass('active')
-
-		$(this).hasClass('active')
-			? $('.portfolio .head .summary .text').fadeIn(300)
-			: $('.portfolio .head .summary .text').fadeOut(200)
-	})
-
-
 	// Reels
 	$('.reels .close_btn').click(function(e) {
 		e.preventDefault()
 
 		$('.reels').fadeOut(200)
 	})
+
+
+	// First section height
+	document.documentElement.style.setProperty('--first_section_height', WH + 'px')
 })
 
 
@@ -388,6 +373,10 @@ window.addEventListener('resize', function () {
 	if (typeof WW !== 'undefined' && WW != windowW) {
 		// Overwrite window width
 		WW = window.innerWidth || document.clientWidth || BODY.clientWidth
+
+
+		// First section height
+		document.documentElement.style.setProperty('--first_section_height', WH + 'px')
 
 
 		// Mob. version
