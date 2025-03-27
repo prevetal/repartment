@@ -633,10 +633,11 @@ header .menu_item > a
 
     padding: 5px 10px;
 
-    transition: color .2s linear;
+    transition: background .2s linear;
     text-decoration: none;
 
     color: currentColor;
+    border-radius: 99px;
 
     gap: 2px;
 }
@@ -654,7 +655,10 @@ header .menu_item > a .arr
 header .menu_item:hover > a,
 header .menu_item > a.active
 {
-    color: var(--primary_color);
+    background: rgba(255, 255, 255, .10);
+
+            backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
 }
 
 
