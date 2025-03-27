@@ -673,7 +673,7 @@ header .sub_menu
     flex-direction: column;
 
     width: 234px;
-    margin-top: 17px;
+    margin-top: 24px;
     padding: 12px;
 
     transition: .2s linear;
@@ -698,7 +698,7 @@ header .sub_menu:before
     display: block;
 
     width: 100%;
-    height: 12px;
+    height: 24px;
 
     content: '';
 }
@@ -3381,7 +3381,7 @@ body.lock .mob_header
     font-family: var(--font_family2);
     font-size: var(--font_size_title_small);
     font-weight: 400;
-    line-height: calc(100% + 10px);
+    line-height: 100%;
 
     text-transform: uppercase;
 }
