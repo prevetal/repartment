@@ -549,6 +549,8 @@ header .logo img
 
 header .menu_wrap
 {
+    position: relative;
+
     display: flex;
     align-content: center;
     align-items: center;
@@ -558,9 +560,29 @@ header .menu_wrap
     padding: 8px 10px;
 
     border-radius: 99px;
-    background: rgba(255, 255, 255, .10);
 
     gap: 16px;
+}
+
+
+header .menu_wrap:before
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+    pointer-events: none;
+
+    border-radius: inherit;
+    background: rgba(255, 255, 255, .10);
+
             backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
 }
@@ -569,6 +591,9 @@ header .menu_wrap
 
 header .menu
 {
+    position: relative;
+    z-index: 3;
+
     gap: 16px;
 }
 
@@ -741,6 +766,9 @@ header .langs
     font-weight: 700;
     line-height: 150%;
 
+    position: relative;
+    z-index: 3;
+
     display: flex;
     align-content: center;
     align-items: center;
@@ -907,6 +935,8 @@ header .phones .val
 {
     font-weight: 500;
     line-height: 22px;
+
+    margin-top: -5px;
 }
 
 
@@ -1905,6 +1935,8 @@ body.lock .mob_header
     height: 30px;
     margin-top: auto;
 
+    transition: background .2s linear;
+
     border-radius: 50%;
     background: rgba(234, 234, 234, .50);
 
@@ -1989,6 +2021,12 @@ body.lock .mob_header
     height: calc(100% + 10px);
 
     opacity: 1;
+}
+
+
+.services .service:hover .link
+{
+    background: rgba(255, 255, 255, .25);
 }
 
 
@@ -2304,7 +2342,7 @@ body.lock .mob_header
     height: 30px;
 
     border-radius: 50%;
-    background: rgba(0, 0, 0, .25);
+    background: rgba(255, 255, 255, .40);
 
             backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);

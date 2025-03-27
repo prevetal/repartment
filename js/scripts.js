@@ -330,7 +330,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			if (is_touch_device()) $('body').css('cursor', 'default')
 		}
 
-		if ($(e.target).closest('.summary').length === 0) {
+		if ($(e.target).closest('.summary').length === 0 && WW < 768) {
 			$('.portfolio .head .summary .mob_btn').removeClass('active')
 			$('.portfolio .head .summary .text').fadeOut(200)
 
