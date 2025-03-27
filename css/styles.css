@@ -673,7 +673,7 @@ header .sub_menu
     flex-direction: column;
 
     width: 234px;
-    margin-top: 12px;
+    margin-top: 17px;
     padding: 12px;
 
     transition: .2s linear;
@@ -881,7 +881,7 @@ header .phones .mini_modal
 
     width: 100%;
     min-width: 215px;
-    margin-top: 4px;
+    margin-top: 17px;
     padding: 12px;
 
     border-radius: 15px;
@@ -1077,7 +1077,7 @@ header .location .mini_modal
     left: auto;
 
     width: 140px;
-    margin-top: 18px;
+    margin-top: 28px;
     padding: 12px;
 
     text-align: center;
