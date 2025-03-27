@@ -169,7 +169,6 @@ document.addEventListener('DOMContentLoaded', function() {
 			watchSlidesProgress: true,
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',
-			slidesPerView: 'auto',
 			lazy: true,
 			loopAdditionalSlides: 1,
 			autoplay: {
@@ -178,13 +177,20 @@ document.addEventListener('DOMContentLoaded', function() {
 			},
 			breakpoints: {
 				0: {
-					spaceBetween: 40
+					spaceBetween: 40,
+					slidesPerView: 2,
+				},
+				550: {
+					spaceBetween: 40,
+					slidesPerView: 'auto',
 				},
 				1024: {
-					spaceBetween: 48
+					spaceBetween: 48,
+					slidesPerView: 'auto',
 				},
 				1280: {
-					spaceBetween: 55
+					spaceBetween: 55,
+					slidesPerView: 'auto',
 				}
 			}
 		}
