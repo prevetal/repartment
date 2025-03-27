@@ -829,7 +829,10 @@
     --------------------*/
     .portfolio_item .project_name
     {
+        display: block;
+
         width: 100%;
+        min-height: 0;
 
         text-align: center;
     }

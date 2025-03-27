@@ -795,6 +795,12 @@
     /*--------------------
         Portfolio item
     --------------------*/
+    .portfolio_item .project_name
+    {
+        min-height: 52px;
+    }
+
+
     .portfolio_item .stats .item
     {
         height: 136px;

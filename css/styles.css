@@ -3241,6 +3241,12 @@ body.lock .mob_header
 }
 
 
+.portfolio .project .desc.dark
+{
+    color: #1d1d1f;
+}
+
+
 .portfolio .project .link
 {
     font-size: 12px;
@@ -3978,10 +3984,15 @@ body.lock .mob_header
     font-weight: 400;
     line-height: calc(100% + 10px);
 
-    display: block;
+    display: flex;
+    align-content: center;
+    align-items: center;
     align-self: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     width: calc(100% - 235px);
+    min-height: 66px;
 
     text-transform: uppercase;
 

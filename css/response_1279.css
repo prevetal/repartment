@@ -669,6 +669,7 @@
     .portfolio_item .project_name
     {
         width: calc(100% - 228px);
+        min-height: 56px;
     }
 
 
