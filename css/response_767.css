@@ -34,6 +34,12 @@
     /*------------
         Header
     ------------*/
+    header
+    {
+        padding: 12px 0;
+    }
+
+
     header .close_btn
     {
         top: 23px;
@@ -729,7 +735,7 @@
 
     .excursion .data .info:before
     {
-        background: rgba(232, 232, 232, .35);
+        background: rgba(255, 255, 255, .25);
     }
 
 

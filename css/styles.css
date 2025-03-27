@@ -498,8 +498,24 @@ header .close_btn
 
     display: none;
 
-    width: 15px;
-    height: 15px;
+    width: 21px;
+    height: 16px;
+}
+
+
+header .close_btn:before
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+
+    width: calc(100% + 24px);
+    height: calc(100% + 24px);
+
+    content: '';
+    transform: translate(-50%, -50%);
 }
 
 
@@ -1208,6 +1224,8 @@ body.lock .mob_header
 
 .mob_header .mob_menu_btn
 {
+    position: relative;
+
     display: flex;
     align-content: center;
     align-items: center;
@@ -1218,6 +1236,22 @@ body.lock .mob_header
     height: 16px;
 
     color: currentColor;
+}
+
+
+.mob_header .mob_menu_btn:before
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+
+    width: calc(100% + 24px);
+    height: calc(100% + 24px);
+
+    content: '';
+    transform: translate(-50%, -50%);
 }
 
 
