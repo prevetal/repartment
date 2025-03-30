@@ -66,7 +66,13 @@
     .action_block .data
     {
         min-height: 300px;
-        padding: 56px 60px;
+        padding: 40px 60px;
+    }
+
+
+    .action_block .desc.big_w
+    {
+        width: 540px;
     }
 
 
@@ -83,5 +89,56 @@
     .excursion .video
     {
         height: 464px;
+    }
+
+
+
+    /*---------------------
+        Factory gallery
+    ---------------------*/
+    .factory_gallery .item .thumb
+    {
+        height: 160px;
+    }
+
+
+    .factory_gallery .item.big1 .thumb,
+    .factory_gallery .item.big2 .thumb
+    {
+        height: 330px;
+    }
+
+
+    .factory_gallery .item .name
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*--------------------
+        Our production
+    --------------------*/
+    .our_production .block_head .desc
+    {
+        width: 432px;
+    }
+
+
+    .our_production .head
+    {
+        height: 360px;
+        margin-bottom: 48px;
+        padding: 48px 0;
+    }
+
+
+
+    /*--------------
+        Fittings
+    --------------*/
+    .fittings .slogan
+    {
+        margin-top: 28px;
     }
 }

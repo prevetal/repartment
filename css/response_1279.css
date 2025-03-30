@@ -188,10 +188,18 @@
     }
 
 
+    .first_section .title span:before
+    {
+        bottom: -1px;
+
+        width: calc(100% - 131px);
+        height: 2px;
+    }
+
+
     .first_section .title span:after
     {
-        bottom: -8px;
-        left: -4px;
+        bottom: -10px;
 
         width: 139px;
         height: 13px;
@@ -356,6 +364,12 @@
     .steps .step .name
     {
         font-size: 18px;
+    }
+
+
+    .steps .step .btn
+    {
+        width: 100%;
     }
 
 
@@ -538,7 +552,7 @@
     .action_block .data
     {
         min-height: 280px;
-        padding: 48px;
+        padding: 40px 48px;
 
         background-position: calc(100% + 160px) calc(50% + 80px);
         background-size: 720px 720px;
@@ -551,6 +565,12 @@
 
         width: 360px;
         margin-top: 24px;
+    }
+
+
+    .action_block .desc.big_w
+    {
+        width: 400px;
     }
 
 
@@ -708,6 +728,155 @@
     .portfolio_item .gallery .image.big_h
     {
         height: 384px;
+    }
+
+
+
+    /*---------------------
+        Factory gallery
+    ---------------------*/
+    .factory_gallery .item .name
+    {
+        font-size: 16px;
+
+        padding: 15px;
+    }
+
+
+    .factory_gallery .item .thumb
+    {
+        height: 132px;
+    }
+
+
+    .factory_gallery .item.big1 .thumb,
+    .factory_gallery .item.big2 .thumb
+    {
+        height: 274px;
+    }
+
+
+    .factory_gallery .item .arrow
+    {
+        bottom: 15px;
+    }
+
+
+
+    /*--------------------
+        Our production
+    --------------------*/
+    .our_production .block_head .title
+    {
+        width: 100%;
+    }
+
+
+    .our_production .block_head .desc
+    {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+
+    .our_production .head
+    {
+        height: 300px;
+        margin-bottom: 40px;
+        padding: 40px 0;
+    }
+
+
+
+    .our_production .item
+    {
+        width: 292px;
+        min-height: 292px;
+    }
+
+    .our_production .item.middle_w
+    {
+        width: 328px;
+    }
+
+    .our_production .item.big_w
+    {
+        width: 328px;
+    }
+
+
+    .our_production .item .name
+    {
+        font-size: 18px;
+    }
+
+
+    .our_production .video
+    {
+        width: calc(100% - 612px);
+        min-height: 292px;
+    }
+
+    .our_production .video.medium_w
+    {
+        width: calc(100% - 628px);
+    }
+
+    .our_production .video.small_w
+    {
+        width: calc(100% - 788px);
+    }
+
+
+    .our_production .image
+    {
+        width: 260px;
+        min-height: 292px;
+    }
+
+    .our_production .image.small_w
+    {
+        width: 240px;
+    }
+
+
+    .our_production .standarts
+    {
+        width: 400px;
+        padding: 24px 20px;
+    }
+
+
+    .our_production .standarts .logo,
+    .our_production .standarts .logo img
+    {
+        max-height: 96px;
+    }
+
+
+
+    /*--------------
+        Fittings
+    --------------*/
+    .fittings .brands .row
+    {
+        margin-bottom: -16px;
+        margin-left: -16px;
+    }
+
+
+    .fittings .brands .row > *
+    {
+        width: calc(33.333% - 16px);
+        margin-bottom: 16px;
+        margin-left: 16px;
+    }
+
+
+    .fittings .brands .brand
+    {
+        height: 96px;
     }
 
 

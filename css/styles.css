@@ -1647,7 +1647,7 @@ body.lock .mob_header
 {
     position: absolute;
     right: 0;
-    bottom: -2px;
+    bottom: 0;
 
     display: block;
 
@@ -4834,7 +4834,7 @@ body.lock .mob_header
 {
     font-size: 20px;
     font-weight: 700;
-    line-height: 22px;
+    line-height: calc(100% + 2px);
 
     width: calc(100% - 51px);
 
@@ -4898,6 +4898,7 @@ body.lock .mob_header
     display: block;
 
     width: calc(100% - 738px);
+    min-height: 303px;
 
     text-decoration: none;
 
@@ -5041,6 +5042,7 @@ body.lock .mob_header
     display: block;
 
     width: 369px;
+    min-height: 303px;
 
     border-radius: 15px;
     box-shadow: 0 10px 80px 0 rgba(0, 0, 0, .05);
