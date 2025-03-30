@@ -1,4 +1,4 @@
-@media (max-width: 549px)
+@media (max-width: 479px)
 {
     /*-------------------
         Global styles
@@ -41,7 +41,6 @@
     header .close_btn
     {
         top: 21px;
-        right: 17px;
     }
 
 
@@ -111,8 +110,6 @@
     -----------------*/
     .first_section .cont
     {
-        height: 100svh;
-        min-height: auto;
         padding-bottom: 140px;
     }
 

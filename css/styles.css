@@ -652,13 +652,23 @@ header .menu_item > a .arr
 }
 
 
-header .menu_item:hover > a,
 header .menu_item > a.active
 {
     background: rgba(255, 255, 255, .10);
 
             backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
+}
+
+@media (any-hover: hover)
+{
+    header .menu_item:hover > a
+    {
+        background: rgba(255, 255, 255, .10);
+
+                backdrop-filter: blur(50px);
+        -webkit-backdrop-filter: blur(50px);
+    }
 }
 
 
@@ -759,11 +769,20 @@ header .sub_menu .arr
 }
 
 
-header .sub_menu a:hover,
 header .sub_menu a.active
 {
     color: var(--primary_color);
 }
+
+
+@media (any-hover: hover)
+{
+    header .sub_menu a:hover
+    {
+        color: var(--primary_color);
+    }
+}
+
 
 
 header .sub_menu .sub
