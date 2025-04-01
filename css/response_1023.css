@@ -178,6 +178,16 @@
     }
 
 
+    header .menu_item > a.active
+    {
+        border-radius: 0;
+        background: none;
+
+                backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+
+
     header .sub_menu a
     {
         font-size: 16px;
@@ -356,21 +366,27 @@
     }
 
 
-    .first_section .title span:after
+    .first_section .title span img
+    {
+        bottom: -8px;
+    }
+
+
+    /* .first_section .title span:before
+    {
+        bottom: 0;
+
+        width: calc(100% - 109px);
+    } */
+
+
+    /* .first_section .title span:after
     {
         bottom: -8px;
 
         width: 117px;
         height: 12px;
-    }
-
-
-    .first_section .title span:before
-    {
-        bottom: 0;
-
-        width: calc(100% - 109px);
-    }
+    } */
 
 
     .first_section .desc
@@ -502,6 +518,12 @@
     {
         font-size: 16px;
         line-height: 125%;
+    }
+
+
+    .projects .project .desc
+    {
+        margin-top: 14px;
     }
 
 
@@ -951,55 +973,7 @@
 
     .fittings .gallery
     {
-        display: block;
-        overflow: auto;
-
-        width: 100%;
         margin-top: 48px;
-
-        white-space: nowrap;
-
-        scroll-padding: 0 0;
-        scroll-snap-type: x mandatory;
-        scrollbar-color: transparent transparent !important;
-        scrollbar-width: thin !important;
-    }
-
-
-    .fittings .gallery::-webkit-scrollbar
-    {
-        display: none !important;
-
-        width: 0 !important;
-        height: 0 !important;
-
-        background-color: transparent !important;
-    }
-
-
-    .fittings .gallery::-webkit-scrollbar-thumb
-    {
-        background-color: transparent !important;
-    }
-
-
-    .fittings .gallery .item
-    {
-        display: inline-block;
-
-        width: 220px;
-        max-width: none;
-        margin: 0;
-
-        vertical-align: top;
-
-        scroll-snap-align: start;
-    }
-
-
-    .fittings .gallery .item + .item
-    {
-        margin-left: 4px;
     }
 
 

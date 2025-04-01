@@ -199,6 +199,22 @@ document.addEventListener('DOMContentLoaded', function() {
 	})
 
 
+	// Fittings
+	let fittingsSlider = new Swiper('.fittings .gallery .swiper', {
+		spaceBetween: 10,
+		speed: $('.fittings .gallery .swiper-slide').length * 350,
+		autoplay: {
+			delay: 1,
+			disableOnInteraction: false
+		},
+		loop: true,
+		slidesPerView: 'auto',
+		allowTouchMove: false
+	})
+
+	setTimeout(() => fittingsSlider.autoplay.start(), 1000)
+
+
 	// Fancybox
 	Fancybox.defaults.autoFocus = false
 	Fancybox.defaults.trapFocus = false

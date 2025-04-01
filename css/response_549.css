@@ -130,17 +130,17 @@
     }
 
 
-    .first_section .title span:before
+    /* .first_section .title span:before
     {
         width: calc(100% - 84px);
-    }
+    } */
 
 
-    .first_section .title span:after
+    /* .first_section .title span:after
     {
         width: 107px;
         height: 10px;
-    }
+    } */
 
 
     .first_section .scroll_down_btn
@@ -413,7 +413,7 @@
 
 
 
-    .fittings .gallery .item
+    .fittings .gallery .swiper-slide
     {
         width: 188px;
     }

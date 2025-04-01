@@ -188,22 +188,20 @@
     }
 
 
-    .first_section .title span:before
+    /* .first_section .title span:before
     {
         bottom: -1px;
 
         width: calc(100% - 131px);
         height: 2px;
-    }
+    } */
 
 
-    .first_section .title span:after
+    /* .first_section .title span:after
     {
-        bottom: -10px;
-
         width: 139px;
         height: 13px;
-    }
+    } */
 
 
     .first_section .desc
