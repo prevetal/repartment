@@ -110,6 +110,42 @@
     }
 
 
+    header .sub_menu
+    {
+        max-width: calc(100vw - 48px);
+    }
+
+
+    header .sub_menu .categories
+    {
+        width: 224px;
+    }
+
+
+    header .sub_menu .sub
+    {
+        width: calc(100% - 264px);
+    }
+
+
+    header .sub_menu .sub .title
+    {
+        font-size: 18px;
+    }
+
+
+    header .sub_menu .sub .cols
+    {
+        gap: 30px;
+    }
+
+
+    header .sub_menu .sub .col
+    {
+        width: 200px;
+    }
+
+
     header .langs a
     {
         padding: 4px 12px;

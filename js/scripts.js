@@ -285,41 +285,41 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 	// Menu
-	$('header .sub_menu a.sub_link').click(function (e) {
+	$('header .menu_item > a.sub_link').click(function (e) {
 		e.preventDefault()
 
-		$(this).toggleClass('active').next().slideToggle(300)
+		let subMenuIndex = $(this).data('sub-menu')
+
+		$('header .sub_menu').hide()
+		$('header .sub_menu' + subMenuIndex).fadeIn(300)
+
+		if (WW < 1024) {
+			$(this).next().slideToggle(300)
+		}
 	})
 
 
-	if (is_touch_device()) {
-		const subMenus = document.querySelectorAll('header .menu .sub_menu')
+	$('header .sub_menu .categories a.sub_link').click(function (e) {
+		e.preventDefault()
 
-		// Submenu on the touch screen
-		$('header .menu_item > a.sub_link').addClass('touch_link')
+		let subIndex = $(this).parent('').index() + 1
 
-		$('header .menu_item > a.sub_link').click(function (e) {
-			const dropdown = $(this).next()
+		$('header .sub_menu .categories a').removeClass('active')
+		$(this).toggleClass('active')
 
-			if (dropdown.css('visibility') === 'hidden') {
-				e.preventDefault()
+		$('header .sub_menu .sub').hide()
+		$('header .sub_menu .sub' + subIndex).fadeIn(300)
+	})
 
-				subMenus.forEach(el => el.classList.remove('show'))
-				dropdown.addClass('show')
 
-				BODY.style = 'cursor: pointer;'
-			}
-		})
+	// Close the submenu when clicking outside it
+	document.addEventListener('click', e => {
+		if ($(e.target).closest('.menu, .sub_menu').length === 0) {
+			$('header .sub_menu').fadeOut(200)
 
-		// Close the submenu when clicking outside it
-		document.addEventListener('click', e => {
-			if ($(e.target).closest('.menu').length === 0) {
-				subMenus.forEach(el => el.classList.remove('show'))
-
-				BODY.style = 'cursor: default;'
-			}
-		})
-	}
+			BODY.style = 'cursor: default;'
+		}
+	})
 
 
 	// Mini popups
@@ -399,6 +399,15 @@ window.addEventListener('resize', function () {
 
 		// First section height
 		document.documentElement.style.setProperty('--first_section_height', WH + 'px')
+
+
+		// Header .menu
+		if (WW > 1023) {
+			$('body').removeClass('lock')
+			$('header').removeClass('show')
+			$('header .menu_item > a').removeClass('active')
+			$('header .menu .mob_sub_menu').hide()
+		}
 
 
 		// Mob. version
