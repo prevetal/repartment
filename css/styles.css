@@ -1520,6 +1520,7 @@ body.lock .mob_header
     flex-wrap: wrap;
     justify-content: flex-start;
 
+    transition: color .2s linear;
     text-decoration: none;
 
     color: currentColor;
@@ -1535,6 +1536,12 @@ body.lock .mob_header
     width: 8px;
     height: 14px;
 
+    color: var(--primary_color);
+}
+
+
+.block_head .all_link a:hover
+{
     color: var(--primary_color);
 }
 
@@ -3844,6 +3851,8 @@ body.lock .mob_header
 
 .excursion .data .info
 {
+    position: relative;
+
     padding: 40px 30px;
 
     color: #1d1d1f;
