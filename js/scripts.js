@@ -383,6 +383,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	// First section height
 	document.documentElement.style.setProperty('--first_section_height', WH + 'px')
+
+
+	// About info - Spoler button
+	$('.about_info .spoler_btn').click(function(e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active')
+
+		$('.about_info .text_block').slideToggle(300)
+	})
 })
 
 

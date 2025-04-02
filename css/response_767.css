@@ -108,6 +108,22 @@
 
 
 
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block > *.margin_top
+    {
+        margin-top: 32px;
+    }
+
+
+    .text_block ul li:before
+    {
+        top: 7px;
+    }
+
+
+
     /*-----------------
         First section
     -----------------*/

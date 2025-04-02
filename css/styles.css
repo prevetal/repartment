@@ -1678,6 +1678,71 @@ body.lock .mob_header
 
 
 
+/*----------------
+    Typography
+----------------*/
+.text_block
+{
+    line-height: 150%;
+
+    color: #1d1d1f;
+}
+
+
+.text_block > *
+{
+    margin-bottom: 16px;
+}
+
+.text_block > *.margin_top
+{
+    margin-top: 36px;
+}
+
+
+.text_block > :last-child
+{
+    margin-bottom: 0 !important;
+}
+
+.text_block > :first-child
+{
+    margin-top: 0 !important;
+}
+
+
+.text_block ul li
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    padding-left: 16px;
+
+    list-style-type: none;
+}
+
+
+.text_block ul li:before
+{
+    position: absolute;
+    top: 9px;
+    left: 0;
+
+    display: block;
+
+    width: 4px;
+    height: 4px;
+
+    content: '';
+
+    border-radius: 50%;
+    background: currentColor;
+}
+
+
+
 /*-----------------
     First section
 -----------------*/
@@ -2559,9 +2624,34 @@ body.lock .mob_header
 }
 
 
+.about_info .spoler_btn span + span
+{
+    display: none;
+}
+
+
 .about_info .spoler_btn.active .icon
 {
     transform: rotate(180deg);
+}
+
+
+.about_info .spoler_btn.active span
+{
+    display: none;
+}
+
+.about_info .spoler_btn.active span + span
+{
+    display: block;
+}
+
+
+.about_info .text_block
+{
+    display: none;
+
+    padding-top: 22px;
 }
 
 
