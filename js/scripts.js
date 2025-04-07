@@ -204,10 +204,11 @@ document.addEventListener('DOMContentLoaded', function() {
 		spaceBetween: 10,
 		speed: $('.fittings .gallery .swiper-slide').length * 350,
 		autoplay: {
-			delay: 1,
+			delay: 0,
 			disableOnInteraction: false
 		},
 		loop: true,
+		loopAdditionalSlides: 1,
 		slidesPerView: 'auto',
 		allowTouchMove: false
 	})
