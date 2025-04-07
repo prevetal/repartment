@@ -658,7 +658,8 @@ header .menu_item > a .arr
 }
 
 
-header .menu_item > a.active
+header .menu_item > a.active,
+header .menu_item > a.hover
 {
     background: rgba(255, 255, 255, .10);
 
@@ -698,6 +699,32 @@ header .sub_menu
     gap: 8px;
             backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
+}
+
+
+header .sub_menu .close_btn
+{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 16px;
+    height: 16px;
+}
+
+
+header .sub_menu .close_btn .icon
+{
+    display: block;
+
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -5514,6 +5541,8 @@ body.lock .mob_header
 .fittings .gallery .item
 {
     display: block;
+
+    width: 232px;
 
     text-decoration: none;
 

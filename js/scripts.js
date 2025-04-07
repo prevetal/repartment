@@ -258,7 +258,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 	// Mob. menu
-	$('.mob_header .mob_menu_btn, header .close_btn').click((e) => {
+	$('.mob_header .mob_menu_btn, header > .close_btn').click((e) => {
 		e.preventDefault()
 
 		$('.mob_header .mob_menu_btn').toggleClass('active')
@@ -290,7 +290,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 		let subMenuIndex = $(this).data('sub-menu')
 
+		$('header .menu_item > a.sub_link').removeClass('hover')
 		$('header .sub_menu').hide()
+
+		$(this).addClass('hover')
 		$('header .sub_menu' + subMenuIndex).fadeIn(300)
 
 		if (WW < 1024) {
@@ -299,16 +302,24 @@ document.addEventListener('DOMContentLoaded', function() {
 	})
 
 
-	$('header .sub_menu .categories a.sub_link').click(function (e) {
+	$('header .sub_menu .close_btn').click(function (e) {
 		e.preventDefault()
 
-		let subIndex = $(this).parent('').index() + 1
+		$('header .menu_item > a.sub_link').removeClass('hover')
+		$('header .sub_menu').fadeOut(200)
+	})
 
-		$('header .sub_menu .categories a').removeClass('active')
-		$(this).toggleClass('active')
 
-		$('header .sub_menu .sub').hide()
-		$('header .sub_menu .sub' + subIndex).fadeIn(300)
+	$('header .sub_menu .categories a.sub_link').mouseenter(function () {
+		if (!$(this).hasClass('active')) {
+			let subIndex = $(this).parent('').index() + 1
+
+			$('header .sub_menu .categories a').removeClass('active')
+			$(this).toggleClass('active')
+
+			$('header .sub_menu .sub').hide()
+			$('header .sub_menu .sub' + subIndex).fadeIn(300)
+		}
 	})
 
 

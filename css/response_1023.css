@@ -847,6 +847,7 @@
     }
 
 
+    .our_production .item.middle_w,
     .our_production .item.big_w
     {
         width: 308px;
@@ -870,16 +871,21 @@
         width: calc(100% - 300px);
     }
 
+    .our_production .video.small_w
+    {
+        width: calc(100% - 588px);
+    }
+
 
     .our_production .image.small_w
     {
-        width: calc(100% - 368px);
+        width: 220px;
     }
 
 
     .our_production .standarts
     {
-        width: calc(100% - 368px);
+        width: calc(100% - 348px);
     }
 
 
