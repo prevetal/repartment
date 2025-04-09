@@ -481,6 +481,18 @@
         height: 354px;
     }
 
+    .why_we .item .image5 img
+    {
+        width: 120px;
+        height: 121px;
+    }
+
+    .why_we .item .image6 img
+    {
+        width: 160px;
+        height: 139px;
+    }
+
 
 
     /*---------------
@@ -921,6 +933,121 @@
     .fittings .brands .brand
     {
         height: 96px;
+    }
+
+
+
+    /*-----------------------------
+        Interior design gallery
+    -----------------------------*/
+    .interior_design_gallery .grid
+    {
+        height: 440px;
+    }
+
+
+    .interior_design_gallery .item .name
+    {
+        font-size: 18px;
+    }
+
+
+    .interior_design_gallery .item1 .types
+    {
+        width: 144px;
+    }
+
+    .interior_design_gallery .item2 .types
+    {
+        width: 160px;
+    }
+
+
+
+    /*-----------------
+        Exact match
+    -----------------*/
+    .exact_match .why
+    {
+        order: 2;
+
+        width: 100%;
+        margin-top: 48px;
+    }
+
+
+    .exact_match .why .item
+    {
+        width: calc(25% - 10px);
+    }
+
+
+
+    .exact_match .before_after
+    {
+        width: 100%;
+    }
+
+
+
+    /*-------------------
+        What included
+    -------------------*/
+    .what_included .item
+    {
+        padding: 19px 20px;
+    }
+
+
+    .what_included .item .thumb
+    {
+        width: 180px;
+        height: 127px;
+    }
+
+
+    .what_included .item .thumb + *
+    {
+        width: calc(100% - 200px);
+        min-height: 127px;
+
+        gap: 12px;
+    }
+
+
+    .what_included .item .name
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*------------
+        Prices
+    ------------*/
+    .prices table th + th,
+    .prices table td + td
+    {
+        padding-left: 60px;
+    }
+
+
+    .prices table th
+    {
+        font-size: 18px;
+
+        padding-bottom: 20px;
+    }
+
+
+    .prices table td.unit
+    {
+        width: 264px;
+    }
+
+    .prices table td.price
+    {
+        width: 220px;
     }
 
 

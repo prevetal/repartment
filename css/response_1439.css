@@ -151,4 +151,46 @@
     {
         margin-top: 28px;
     }
+
+
+
+    /*-----------------------------
+        Interior design gallery
+    -----------------------------*/
+    .interior_design_gallery .item1
+    {
+        grid-area: 1 / 1 / 8 / 5;
+    }
+
+    .interior_design_gallery .item4
+    {
+        grid-area: 8 / 1 / 11 / 3;
+    }
+
+    .interior_design_gallery .item5
+    {
+        grid-area: 8 / 3 / 11 / 5;
+    }
+
+
+
+    /*------------
+        Prices
+    ------------*/
+    .prices table th + th,
+    .prices table td + td
+    {
+        padding-left: 100px;
+    }
+
+
+    .prices table td.unit
+    {
+        width: 324px;
+    }
+
+    .prices table td.price
+    {
+        width: 300px;
+    }
 }

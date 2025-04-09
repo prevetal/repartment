@@ -130,19 +130,6 @@
     }
 
 
-    /* .first_section .title span:before
-    {
-        width: calc(100% - 84px);
-    } */
-
-
-    /* .first_section .title span:after
-    {
-        width: 107px;
-        height: 10px;
-    } */
-
-
     .first_section .scroll_down_btn
     {
         height: 60px;
@@ -168,7 +155,35 @@
 
     .why_we .item
     {
-        min-height: 210px;
+        min-height: 220px;
+    }
+
+
+    .why_we .item .desc br
+    {
+        display: none;
+    }
+
+
+    .why_we .item .image5
+    {
+        right: -14px;
+        bottom: -20px;
+        left: auto;
+    }
+
+
+    .why_we .item .image5 img
+    {
+        width: 137px;
+        height: 139px;
+        margin-left: auto;
+    }
+
+    .why_we .item .image6 img
+    {
+        width: 120px;
+        height: 104px;
     }
 
 
@@ -416,5 +431,194 @@
     .fittings .gallery .swiper-slide
     {
         width: 188px;
+    }
+
+
+
+    /*-----------------------------
+        Interior design gallery
+    -----------------------------*/
+    .interior_design_gallery .grid
+    {
+        height: 600px;
+        height: 588px;
+
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+
+    .interior_design_gallery .item1
+    {
+        grid-area: 1 / 1 / 4 / 6;
+    }
+
+    .interior_design_gallery .item2
+    {
+        grid-area: 4 / 4 / 7 / 9;
+    }
+
+    .interior_design_gallery .item3
+    {
+        grid-area: 1 / 6 / 4 / 9;
+    }
+
+    .interior_design_gallery .item4
+    {
+        grid-area: 7 / 5 / 9 / 9;
+    }
+
+    .interior_design_gallery .item5
+    {
+        grid-area: 7 / 1 / 9 / 5;
+    }
+
+    .interior_design_gallery .item6
+    {
+        grid-area: 4 / 1 / 7 / 4;
+    }
+
+
+    .interior_design_gallery .item .name
+    {
+        font-size: 14px;
+    }
+
+
+    .interior_design_gallery .item .types
+    {
+        font-size: 10px;
+
+        margin-top: 12px;
+    }
+
+
+    .interior_design_gallery .item1 .types
+    {
+        width: 116px;
+    }
+
+    .interior_design_gallery .item2 .types
+    {
+        width: 128px;
+    }
+
+
+    .interior_design_gallery .item .types .icon
+    {
+        width: 14px;
+        height: 14px;
+    }
+
+
+
+    /*-----------------
+        Exact match
+    -----------------*/
+    .exact_match .before_after .image img
+    {
+        height: 240px;
+    }
+
+
+    .exact_match .before_after .image .sticker
+    {
+        font-size: 10px;
+
+        top: 10px;
+        left: 10px;
+
+        padding: 5px 10px;
+    }
+
+    .exact_match .before_after .image .sticker.after
+    {
+        right: 10px;
+    }
+
+
+    .exact_match .why .item
+    {
+        height: 207px;
+        padding: 10px 15px;
+    }
+
+
+    .exact_match .why .item .image2
+    {
+        bottom: -35px;
+        left: -9px;
+    }
+
+    .exact_match .why .item .image3
+    {
+        bottom: -47px;
+        left: -80px;
+    }
+
+    .exact_match .why .item .image4
+    {
+        bottom: -10px;
+    }
+
+
+    .exact_match .why .item .image1 img
+    {
+        width: 165px;
+        height: 115px;
+    }
+
+    .exact_match .why .item .image2 img
+    {
+        width: 166px;
+        height: 158px;
+    }
+
+    .exact_match .why .item .image3 img
+    {
+        width: 256px;
+        height: 171px;
+    }
+
+    .exact_match .why .item .image4 img
+    {
+        width: 165px;
+        height: 131px;
+    }
+
+
+
+    /*-------------------
+        What included
+    -------------------*/
+    .what_included .item .thumb
+    {
+        width: 120px;
+        height: 85px;
+    }
+
+
+    .what_included .item .thumb + *
+    {
+        width: calc(100% - 135px);
+        min-height: 85px;
+
+        gap: 8px;
+    }
+
+
+
+    /*------------
+        Prices
+    ------------*/
+    .prices table th
+    {
+        font-size: 14px;
+    }
+
+
+    .prices table td.price
+    {
+        width: 104px;
     }
 }

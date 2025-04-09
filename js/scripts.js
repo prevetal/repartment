@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 	// Fittings
-	let fittingsSlider = new Swiper('.fittings .gallery .swiper', {
+	new Swiper('.fittings .gallery .swiper', {
 		spaceBetween: 10,
 		speed: $('.fittings .gallery .swiper-slide').length * 350,
 		autoplay: {
@@ -210,10 +210,11 @@ document.addEventListener('DOMContentLoaded', function() {
 		loop: true,
 		loopAdditionalSlides: 1,
 		slidesPerView: 'auto',
-		allowTouchMove: false
+		allowTouchMove: false,
+		on: {
+			init: swiper => setTimeout(() => swiper.autoplay.start(), 1000)
+		}
 	})
-
-	setTimeout(() => fittingsSlider.autoplay.start(), 1000)
 
 
 	// Fancybox

@@ -141,7 +141,8 @@
     }
 
 
-    header .menu_item > a.active
+    header .menu_item > a.active,
+    header .menu_item > a.hover
     {
         border-radius: 0;
         background: none;
@@ -307,23 +308,6 @@
     {
         bottom: -8px;
     }
-
-
-    /* .first_section .title span:before
-    {
-        bottom: 0;
-
-        width: calc(100% - 109px);
-    } */
-
-
-    /* .first_section .title span:after
-    {
-        bottom: -8px;
-
-        width: 117px;
-        height: 12px;
-    } */
 
 
     .first_section .desc
@@ -527,6 +511,19 @@
     {
         font-size: 16px;
         line-height: 125%;
+    }
+
+
+    .why_we .item .image5 img
+    {
+        width: 144px;
+        height: 146px;
+    }
+
+    .why_we .item .image6 img
+    {
+        width: 188px;
+        height: 163px;
     }
 
 
@@ -917,6 +914,147 @@
     .fittings .gallery
     {
         margin-top: 48px;
+    }
+
+
+
+    /*-----------------------------
+        Interior design gallery
+    -----------------------------*/
+    .interior_design_gallery .grid
+    {
+        height: 600px;
+
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(14, 1fr);
+    }
+
+
+    .interior_design_gallery .item1
+    {
+        grid-area: 1 / 1 / 8 / 4;
+    }
+
+    .interior_design_gallery .item2
+    {
+        grid-area: 1 / 4 / 11 / 7;
+    }
+
+    .interior_design_gallery .item3
+    {
+        grid-area: 11 / 1 / 15 / 3;
+    }
+
+    .interior_design_gallery .item4
+    {
+        grid-area: 8 / 1 / 11 / 2;
+    }
+
+    .interior_design_gallery .item5
+    {
+        grid-area: 8 / 2 / 11 / 4;
+    }
+
+    .interior_design_gallery .item6
+    {
+        grid-area: 11 / 3 / 15 / 7;
+    }
+
+
+    .interior_design_gallery .item .name
+    {
+        font-size: 16px;
+        line-height: 125%;
+    }
+
+
+
+    /*-----------------
+        Exact match
+    -----------------*/
+    .exact_match .why .item
+    {
+        width: calc(50% - 10px);
+        height: 200px;
+    }
+
+
+
+    /*-------------------
+        What included
+    -------------------*/
+    .what_included .block_head .col
+    {
+        max-width: calc(100% - 276px);
+    }
+
+
+    .what_included .grid
+    {
+        padding-bottom: 1px;
+    }
+
+
+    .what_included .grid > *
+    {
+        width: 100%;
+        margin-bottom: -1px;
+    }
+
+
+    .what_included .item .name
+    {
+        font-size: 16px;
+        line-height: 125%;
+    }
+
+
+
+    /*------------
+        Prices
+    ------------*/
+    .prices .block_head.row .title
+    {
+        width: 100%;
+    }
+
+
+    .prices .block_head .messengers
+    {
+        margin-left: 0;
+    }
+
+
+    .prices table th + th,
+    .prices table td + td
+    {
+        padding-left: 24px;
+    }
+
+
+    .prices table th
+    {
+        font-size: 16px;
+        line-height: 125%;
+
+        padding-bottom: 16px;
+    }
+
+
+    .prices table td
+    {
+        padding: 16px 0;
+    }
+
+
+    .prices table td.unit
+    {
+        width: 204px;
+    }
+
+    .prices table td.price
+    {
+        width: 148px;
     }
 
 

@@ -324,7 +324,7 @@ button
 {
     position: relative;
 
-    padding: 25px 73px 25px 25px;
+    padding: 25px 84px 25px 25px;
 
     cursor: pointer;
 }
@@ -1705,6 +1705,142 @@ body.lock .mob_header
 
 
 
+.block_head .messengers
+{
+    display: flex;
+
+    margin-left: auto;
+}
+
+
+.block_head .messengers > div
+{
+    line-height: 150%;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    padding: 5px 5px 5px 16px;
+
+    border-radius: 50px;
+    background: #eaeaea;
+
+            backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+}
+
+
+.block_head .messengers span
+{
+    margin-right: 5px;
+}
+
+
+.block_head .messengers a
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+
+    text-decoration: none;
+
+    color: currentColor;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .90);
+}
+
+
+.block_head .messengers .icon
+{
+    display: block;
+}
+
+
+.block_head .messengers .whatsapp_link .icon
+{
+    width: 17px;
+    height: 18px;
+}
+
+.block_head .messengers .tg_link .icon
+{
+    width: 20px;
+    height: 16px;
+}
+
+
+
+.block_head .download
+{
+    display: flex;
+
+    margin-left: auto;
+}
+
+
+.block_head .download a
+{
+    font-weight: 500;
+    line-height: 22px;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 5px 5px 5px 16px;
+
+    text-decoration: none;
+    letter-spacing: -.4px;
+
+    color: #5b5b5b;
+    border-radius: 50px;
+    background: #eaeaea;
+
+    gap: 10px;
+            backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+}
+
+
+.block_head .download .icon
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 35px;
+    height: 35px;
+
+    color: #000;
+    border-radius: 9999px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .90);
+}
+
+
+.block_head .download .icon svg
+{
+    display: block;
+
+    width: 18px;
+    height: 17px;
+}
+
+
+
 /*----------------
     Typography
 ----------------*/
@@ -1887,43 +2023,6 @@ body.lock .mob_header
 }
 
 
-/* .first_section .title span:before
-{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-
-    display: block;
-
-    width: calc(100% - 150px);
-    height: 3px;
-
-    content: '';
-    pointer-events: none;
-
-    border-radius: 0 2px 2px 0;
-    background: currentColor;
-} */
-
-
-/* .first_section .title span:after
-{
-    position: absolute;
-    bottom: -10px;
-    left: -6px;
-
-    display: block;
-
-    width: 159px;
-    height: 15px;
-
-    content: '';
-    pointer-events: none;
-
-    background: url(../images/bg_first_section_title.svg) 0 0/100% 100% no-repeat;
-} */
-
-
 .first_section .desc
 {
     font-size: 17px;
@@ -1931,6 +2030,12 @@ body.lock .mob_header
     width: 641px;
     max-width: 100%;
     margin-top: 20px;
+}
+
+
+.first_section .desc.small_w
+{
+    width: 503px;
 }
 
 
@@ -3246,12 +3351,6 @@ body.lock .mob_header
 }
 
 
-.why_we .item .desc br
-{
-    display: none;
-}
-
-
 .why_we .item .image
 {
     position: absolute;
@@ -3294,6 +3393,18 @@ body.lock .mob_header
     left: auto;
 }
 
+.why_we .item .image5
+{
+    bottom: 0;
+    left: 0;
+}
+
+.why_we .item .image6
+{
+    bottom: 0;
+    left: 0;
+}
+
 
 .why_we .item .image img
 {
@@ -3323,6 +3434,18 @@ body.lock .mob_header
 {
     width: 297px;
     height: 446px;
+}
+
+.why_we .item .image5 img
+{
+    width: 184px;
+    height: 186px;
+}
+
+.why_we .item .image6 img
+{
+    width: 231px;
+    height: 200px;
 }
 
 
@@ -5115,7 +5238,6 @@ body.lock .mob_header
 
 .our_production .item .desc
 {
-    font-size: 14px;
     line-height: 150%;
 
     display: flex;
@@ -5264,7 +5386,6 @@ body.lock .mob_header
 
 .our_production .video .name
 {
-    font-size: 14px;
     line-height: 150%;
 
     position: absolute;
@@ -5396,7 +5517,6 @@ body.lock .mob_header
 
 .our_production .standarts .desc
 {
-    font-size: 14px;
     line-height: 150%;
 
     position: relative;
@@ -5448,7 +5568,6 @@ body.lock .mob_header
 
 .fittings .slogan
 {
-    font-size: 14px;
     line-height: 150%;
 
     width: 100%;
@@ -5542,8 +5661,6 @@ body.lock .mob_header
 {
     display: block;
 
-    width: 232px;
-
     text-decoration: none;
 
     border-radius: 6px;
@@ -5560,6 +5677,755 @@ body.lock .mob_header
 
 
 .fittings .gallery .item img
+{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: inherit;
+
+    object-fit: cover;
+}
+
+
+
+/*------------
+    Prices
+------------*/
+.prices table
+{
+    width: 100%;
+
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+
+.prices table th
+{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: calc(100% + 2px);
+
+    padding-bottom: 30px;
+
+    text-align: center;
+    vertical-align: middle;
+
+    color: #1d1d1f;
+    border-bottom: 1px solid #eaeaea;
+}
+
+
+.prices table td
+{
+    line-height: 150%;
+
+    padding: 20px 0;
+
+    text-align: left;
+    vertical-align: middle;
+
+    color: #5b5b5b;
+    border-bottom: 1px solid #eaeaea;
+}
+
+
+.prices table th + th,
+.prices table td + td
+{
+    padding-left: 124px;
+}
+
+
+.prices table td .label
+{
+    font-weight: 700;
+
+    margin-bottom: 10px;
+
+    color: #1d1d1f;
+}
+
+
+.prices table td.unit
+{
+    width: 348px;
+
+    table-layout: fixed;
+
+    text-align: center;
+}
+
+
+.prices table td.price
+{
+    width: 324px;
+
+    table-layout: fixed;
+
+    text-align: center;
+}
+
+
+
+/*-------------------
+    What included
+-------------------*/
+.what_included .block_head .col
+{
+    width: 685px;
+    max-width: calc(100% - 282px);
+}
+
+
+.what_included .grid
+{
+    display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+
+.what_included .grid > *
+{
+    width: 50%;
+}
+
+
+.what_included .item
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 24px 25px;
+
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
+
+
+.what_included .item .thumb
+{
+    position: relative;
+
+    width: 197px;
+    height: 139px;
+
+    background: #ddd;
+}
+
+
+.what_included .item .thumb img
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.what_included .item .thumb + *
+{
+    display: flex;
+    flex-direction: column;
+
+    width: calc(100% - 227px);
+    min-height: 139px;
+
+    gap: 15px;
+}
+
+
+.what_included .item .name
+{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: calc(100% + 2px);
+
+    color: #1d1d1f;
+}
+
+
+.what_included .item .desc
+{
+    line-height: 150%;
+
+    color: #5b5b5b;
+}
+
+
+.what_included .item .link
+{
+    font-size: 12px;
+    line-height: 150%;
+
+    margin-top: auto;
+
+    color: #bca584;
+}
+
+
+.what_included .item .link a
+{
+    display: inline-block;
+
+    vertical-align: top;
+
+    color: currentColor;
+
+    text-decoration-thickness: 1px;
+}
+
+
+
+/*-----------------
+    Exact match
+-----------------*/
+.exact_match .row
+{
+    align-content: flex-end;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+
+.exact_match .why
+{
+    width: 502px;
+    max-width: 100%;
+}
+
+
+.exact_match .why .title
+{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: calc(100% + 2px);
+
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+
+    color: #1d1d1f;
+}
+
+
+.exact_match .why .title .icon
+{
+    display: block;
+
+    width: 13px;
+    height: 22px;
+
+    color: #bca584;
+}
+
+
+.exact_match .why .title span
+{
+    width: calc(100% - 29px);
+}
+
+
+.exact_match .why .items
+{
+    display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-bottom: -10px;
+    margin-left: -10px;
+}
+
+
+.exact_match .why .item
+{
+    line-height: 150%;
+
+    position: relative;
+
+    overflow: hidden;
+
+    width: calc(50% - 10px);
+    height: 224px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 15px 20px;
+
+    color: #5b5b5b;
+    border-radius: 15px;
+    background: #fff;
+}
+
+
+.exact_match .why .item .desc
+{
+    position: relative;
+    z-index: 3;
+}
+
+
+.exact_match .why .item .image
+{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    pointer-events: none;
+}
+
+
+.exact_match .why .item .image2
+{
+    bottom: -28px;
+    left: -11px;
+
+    transform: rotate(-17.03deg);
+}
+
+.exact_match .why .item .image3
+{
+    bottom: -37px;
+    left: -80px;
+}
+
+.exact_match .why .item .image4
+{
+    right: 0;
+    bottom: -12px;
+    left: auto;
+}
+
+
+.exact_match .why .item .image img
+{
+    display: block;
+}
+
+.exact_match .why .item .image1 img
+{
+    width: 195px;
+    height: 136px;
+}
+
+.exact_match .why .item .image2 img
+{
+    width: 185px;
+    height: 177px;
+}
+
+.exact_match .why .item .image3 img
+{
+    width: 303px;
+    height: 188px;
+}
+
+.exact_match .why .item .image4 img
+{
+    width: 240px;
+    height: 168px;
+}
+
+
+.exact_match .before_after
+{
+    position: relative;
+
+    width: calc(100% - 522px);
+    margin-left: auto;
+}
+
+
+.exact_match .before_after .slogan
+{
+    line-height: 150%;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 331px;
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin-left: auto;
+
+    color: #5b5b5b;
+}
+
+
+.exact_match .before_after .slogan .icon
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 41px;
+    height: 41px;
+
+    color: #bca584;
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+
+.exact_match .before_after .slogan .icon svg
+{
+    display: block;
+
+    width: 19px;
+    height: 24px;
+}
+
+
+.exact_match .before_after .slogan span
+{
+    width: calc(100% - 56px);
+}
+
+
+.exact_match .before_after .image
+{
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+    background: #ddd;
+}
+
+
+.exact_match .before_after .image .sticker
+{
+    font-size: 12px;
+    line-height: 150%;
+
+    position: absolute;
+    z-index: 3;
+    top: 20px;
+    left: 20px;
+
+    padding: 10px 15px;
+
+    color: #1d1d1f;
+    border-radius: 50px;
+    background: #f5f2ed;
+
+            backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+}
+
+
+.exact_match .before_after .image .sticker.after
+{
+    right: 20px;
+    left: auto;
+}
+
+
+.exact_match .before_after img-comparison-slider
+{
+    position: relative;
+    z-index: 1;
+
+    display: block;
+    visibility: hidden;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: inherit;
+
+    --divider-width: 2px;
+}
+
+.exact_match .before_after img-comparison-slider [slot='second']
+{
+    display: none;
+}
+
+.exact_match .before_after img-comparison-slider.rendered
+{
+    visibility: inherit;
+}
+
+.exact_match .before_after img-comparison-slider.rendered [slot='second']
+{
+    display: unset;
+}
+
+
+.exact_match .before_after .image picture
+{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: inherit;
+}
+
+
+.exact_match .before_after .image .first:before
+{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+
+    background: rgba(83, 83, 83, .20);
+}
+
+
+.exact_match .before_after .image img
+{
+    display: block;
+
+    width: 100%;
+    height: 524px;
+
+    border-radius: inherit;
+
+    object-fit: cover;
+}
+
+
+.exact_match .before_after .image .handle
+{
+    width: 22px;
+    height: 22px;
+
+    border-radius: 50%;
+    background: #fff;
+}
+
+
+
+/*-----------------------------
+    Interior design gallery
+-----------------------------*/
+.interior_design_gallery .grid
+{
+    display: grid;
+
+    height: 514px;
+
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+
+.interior_design_gallery .item
+{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px 15px;
+
+    text-decoration: none;
+
+    color: #fff;
+    border-radius: 10px;
+}
+
+
+.interior_design_gallery .item1
+{
+    grid-area: 1 / 1 / 7 / 5;
+}
+
+.interior_design_gallery .item2
+{
+    grid-area: 1 / 5 / 11 / 8;
+}
+
+.interior_design_gallery .item3
+{
+    grid-area: 1 / 8 / 6 / 11;
+}
+
+.interior_design_gallery .item4
+{
+    grid-area: 7 / 1 / 11 / 3;
+}
+
+.interior_design_gallery .item5
+{
+    grid-area: 7 / 3 / 11 / 5;
+}
+
+.interior_design_gallery .item6
+{
+    grid-area: 6 / 8 / 11 / 11;
+}
+
+
+.interior_design_gallery .item > *
+{
+    position: relative;
+    z-index: 3;
+}
+
+
+.interior_design_gallery .item .name
+{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: calc(100% + 2px);
+}
+
+
+.interior_design_gallery .item .desc
+{
+    line-height: 150%;
+
+    margin-top: 10px;
+}
+
+
+.interior_design_gallery .item .types
+{
+    line-height: 150%;
+
+    display: flex;
+    flex-direction: column;
+
+    max-width: 100%;
+    margin-top: 30px;
+
+    gap: 5px;
+}
+
+
+.interior_design_gallery .item1 .types
+{
+    width: 149px;
+}
+
+.interior_design_gallery .item2 .types
+{
+    width: 166px;
+}
+
+
+.interior_design_gallery .item .types > * > div
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    padding: 5px 10px;
+
+    border-radius: 50px;
+    background: rgba(255, 255, 255, .10);
+
+    gap: 8px;
+            backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+}
+
+
+.interior_design_gallery .item .types .icon
+{
+    display: block;
+
+    width: 18px;
+    height: 18px;
+}
+
+
+.interior_design_gallery .item .types span
+{
+    max-width: calc(100% - 26px);
+}
+
+
+.interior_design_gallery .item .price
+{
+    font-weight: 700;
+    line-height: 150%;
+
+    margin-top: auto;
+    padding-right: 10px;
+
+    text-align: right;
+}
+
+
+.interior_design_gallery .item .thumb
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: inherit;
+    background: #ddd;
+}
+
+
+.interior_design_gallery .item .thumb:before
+{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+
+    border-radius: inherit;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .40) 0%, rgba(0, 0, 0, .00) 100%);
+}
+
+
+.interior_design_gallery .item .thumb img
 {
     display: block;
 
