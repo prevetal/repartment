@@ -106,8 +106,6 @@
         font-weight: 200;
 
         margin-top: 5px;
-
-        text-transform: none;
     }
 
 
@@ -167,8 +165,8 @@
 
     .why_we .item .image5
     {
-        right: -14px;
-        bottom: -20px;
+        right: 0;
+        bottom: 0;
         left: auto;
     }
 
@@ -611,6 +609,12 @@
     /*------------
         Prices
     ------------*/
+    .prices .block_head .messengers
+    {
+        display: none;
+    }
+
+
     .prices table th
     {
         font-size: 14px;

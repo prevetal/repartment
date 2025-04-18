@@ -292,11 +292,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
 		let subMenuIndex = $(this).data('sub-menu')
 
-		$('header .menu_item > a.sub_link').removeClass('hover')
-		$('header .sub_menu').hide()
+		if ($('header .menu_item > a.sub_link').hasClass('hover')) {
+			$('header .menu_item > a.sub_link').removeClass('hover')
+			$('header .sub_menu').hide()
+		} else {
+			$('header .menu_item > a.sub_link').removeClass('hover')
+			$('header .sub_menu').hide()
 
-		$(this).addClass('hover')
-		$('header .sub_menu' + subMenuIndex).fadeIn(300)
+			$(this).addClass('hover')
+			$('header .sub_menu' + subMenuIndex).fadeIn(300)
+		}
 
 		if (WW < 1024) {
 			$(this).next().slideToggle(300)
@@ -328,6 +333,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	// Close the submenu when clicking outside it
 	document.addEventListener('click', e => {
 		if ($(e.target).closest('.menu, .sub_menu').length === 0) {
+			$('header .menu_item > a.sub_link').removeClass('hover')
 			$('header .sub_menu').fadeOut(200)
 
 			BODY.style = 'cursor: default;'
@@ -405,6 +411,31 @@ document.addEventListener('DOMContentLoaded', function() {
 		$(this).toggleClass('active')
 
 		$('.about_info .text_block').slideToggle(300)
+	})
+
+
+	// before/After
+	const slider = document.getElementById('before_after')
+
+	slider.addEventListener('slide', () => {
+		const handle = document.querySelector('.before_after .handle'),
+			parent = handle.parentElement
+
+		const handleRect = handle.getBoundingClientRect(),
+			parentRect = parent.getBoundingClientRect()
+
+		const offsetX = handleRect.left - parentRect.left,
+			parentWidth = parentRect.width
+
+		const percent = (offsetX / parentWidth) * 100
+
+		if (percent < 45) {
+			$('.exact_match .before_after .image .sticker.before').fadeOut(200)
+		  } else if (percent > 55) {
+			$('.exact_match .before_after .image .sticker.after').fadeOut(200)
+		  } else {
+			$('.exact_match .before_after .image .sticker.before, .exact_match .before_after .image .sticker.after').fadeIn(200)
+		  }
 	})
 })
 
