@@ -658,6 +658,16 @@ header .menu_item > a .arr
 }
 
 
+header .menu_item > a .close
+{
+    display: none;
+
+    width: 8px;
+    height: 8px;
+    margin: 0 3px;
+}
+
+
 header .menu_item > a.active,
 header .menu_item > a.hover
 {
@@ -676,6 +686,17 @@ header .menu_item > a.hover
                 backdrop-filter: blur(50px);
         -webkit-backdrop-filter: blur(50px);
     }
+}
+
+
+header .menu_item > a.hover .arr
+{
+    display: none;
+}
+
+header .menu_item > a.hover .close
+{
+    display: block;
 }
 
 
@@ -6305,7 +6326,7 @@ body.lock .mob_header
 .interior_design_gallery .item .name
 {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: calc(100% + 2px);
 }
 
