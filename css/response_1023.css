@@ -457,6 +457,11 @@
         width: calc(33.333% - 20px);
     }
 
+    .steps .row > *.tablet_big
+    {
+        width: calc(50% - 20px);
+    }
+
 
 
     .steps .start .name,

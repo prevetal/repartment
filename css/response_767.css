@@ -344,7 +344,8 @@
     }
 
 
-    .steps .row > *
+    .steps .row > *,
+    .steps .row > *.tablet_big
     {
         width: calc(50% - 10px);
         margin-bottom: 10px;
