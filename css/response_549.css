@@ -625,4 +625,112 @@
     {
         width: 104px;
     }
+
+
+
+    /*-------------------
+        Sub. services
+    -------------------*/
+    .sub_services .row
+    {
+        margin-left: -5px;
+
+        gap: 5px 0;
+    }
+
+
+    .sub_services .row > *,
+    .sub_services .row > *:nth-last-child(2)
+    {
+        width: calc(50% - 5px);
+        margin-left: 5px;
+    }
+
+
+    .sub_services .row > *:last-child
+    {
+        width: calc(100% - 5px);
+        min-height: 120px;
+    }
+
+
+    .sub_services .item
+    {
+        min-height: 168px;
+        padding: 12px;
+    }
+
+
+    .sub_services .item .name
+    {
+        font-size: 12px;
+    }
+
+
+    .sub_services .item .features
+    {
+        font-size: 10px;
+
+        gap: 5px;
+    }
+
+
+    .sub_services .item .features > * > *
+    {
+        padding: 4px 8px;
+    }
+
+
+    .sub_services .item .features .icon
+    {
+        width: 14px;
+        height: 14px;
+    }
+
+
+
+    /*--------------------
+        Control levels
+    --------------------*/
+    .control_levels .wheelSlider-container
+    {
+        width: 260px;
+        padding-bottom: 48px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .item
+    {
+        padding: 20px 10px;
+    }
+
+
+    .contacts_info .item .phone .btn
+    {
+        display: none;
+    }
+
+
+    .contacts_info .item .map
+    {
+        height: 240px;
+    }
+
+
+    .contacts_info .requisites > div
+    {
+        font-size: 12px;
+
+        gap: 20px;
+    }
+
+
+    .contacts_info .requisites span
+    {
+        width: 80px;
+    }
 }

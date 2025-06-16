@@ -193,4 +193,111 @@
     {
         width: 300px;
     }
+
+
+
+    /*-------------------
+        Sub. services
+    -------------------*/
+    .sub_services .item
+    {
+        min-height: 464px;
+
+        gap: 20px;
+    }
+
+
+    .sub_services .item .name
+    {
+        font-size: 18px;
+    }
+
+
+    .sub_services .item .features
+    {
+        line-height: 18px;
+    }
+
+
+
+    /*--------------------
+        Control levels
+    --------------------*/
+    .control_levels .bottom
+    {
+        margin-top: 40px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .list
+    {
+        gap: 48px;
+    }
+
+
+    .contacts_info .item
+    {
+        padding: 24px;
+    }
+
+
+    .contacts_info .item .data
+    {
+        gap: 24px;
+    }
+
+
+    .contacts_info .item .city > *
+    {
+        font-size: 20px;
+        line-height: calc(100% + 6px);
+    }
+
+
+    .contacts_info .item .label
+    {
+        font-size: 16px;
+
+        margin-bottom: 4px;
+    }
+
+
+    .contacts_info .item .val
+    {
+        font-size: 16px;
+    }
+
+
+    .contacts_info .item .time
+    {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+
+    .contacts_info .item .map
+    {
+        height: 418px;
+    }
+
+
+    .contacts_info .item .map_wrap .link a
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        padding: 15px 31px;
+    }
+
+
+    .contacts_info .requisites > div
+    {
+        font-size: 16px;
+
+        gap: 32px;
+    }
 }

@@ -417,25 +417,38 @@ document.addEventListener('DOMContentLoaded', function() {
 	// before/After
 	const slider = document.getElementById('before_after')
 
-	slider.addEventListener('slide', () => {
-		const handle = document.querySelector('.before_after .handle'),
-			parent = handle.parentElement
+	if (slider) {
+		slider.addEventListener('slide', () => {
+			const handle = document.querySelector('.before_after .handle'),
+				parent = handle.parentElement
 
-		const handleRect = handle.getBoundingClientRect(),
-			parentRect = parent.getBoundingClientRect()
+			const handleRect = handle.getBoundingClientRect(),
+				parentRect = parent.getBoundingClientRect()
 
-		const offsetX = handleRect.left - parentRect.left,
-			parentWidth = parentRect.width
+			const offsetX = handleRect.left - parentRect.left,
+				parentWidth = parentRect.width
 
-		const percent = (offsetX / parentWidth) * 100
+			const percent = (offsetX / parentWidth) * 100
 
-		if (percent < 45) {
-			$('.exact_match .before_after .image .sticker.before').fadeOut(200)
-		  } else if (percent > 55) {
-			$('.exact_match .before_after .image .sticker.after').fadeOut(200)
-		  } else {
-			$('.exact_match .before_after .image .sticker.before, .exact_match .before_after .image .sticker.after').fadeIn(200)
-		  }
+			if (percent < 45) {
+				$('.exact_match .before_after .image .sticker.before').fadeOut(200)
+			} else if (percent > 55) {
+				$('.exact_match .before_after .image .sticker.after').fadeOut(200)
+			} else {
+				$('.exact_match .before_after .image .sticker.before, .exact_match .before_after .image .sticker.after').fadeIn(200)
+			}
+		})
+	}
+})
+
+
+
+window.addEventListener('load', function () {
+	// Control levels
+	$('.control_levels .wheelSlider-container').wheelSlider({
+		items: 5,
+		arrowPrevHtml: '<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>',
+		arrowNextHtml: '<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>'
 	})
 })
 

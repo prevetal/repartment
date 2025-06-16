@@ -1124,7 +1124,8 @@
     }
 
 
-    .our_production .standarts
+    .our_production .standarts,
+    .our_production .smart_home
     {
         width: 100%;
         min-height: 210px;
@@ -1368,6 +1369,209 @@
     .prices table td.unit
     {
         display: none;
+    }
+
+
+
+    /*-------------------
+        Sub. services
+    -------------------*/
+    .sub_services .row > *,
+    .sub_services .row > *:nth-last-child(2)
+    {
+        width: calc(50% - 10px);
+    }
+
+
+    .sub_services .row > *:last-child
+    {
+        width: calc(100% - 10px);
+    }
+
+
+    .sub_services .item
+    {
+        min-height: 360px;
+    }
+
+
+    .sub_services .item .name
+    {
+        font-size: 16px;
+    }
+
+
+    .sub_services .item .features
+    {
+        gap: 8px;
+    }
+
+
+    .sub_services .item .features > * > *
+    {
+        margin-left: 0;
+    }
+
+
+
+    /*--------------------
+        Control levels
+    --------------------*/
+    .control_levels .wheelSlider-container
+    {
+        width: 300px;
+        padding-bottom: 40px;
+    }
+
+
+    .wheelSlider-container .slide.next
+    {
+        margin-left: -100px;
+    }
+
+    .wheelSlider-container .slide.prev
+    {
+        margin-left: 100px;
+    }
+
+
+    .wheelSlider-container .wheelSlider-arrow[data-action='prev']
+    {
+        display: none;
+    }
+
+
+    .wheelSlider-container .wheelSlider-arrow[data-action='next']
+    {
+        top: auto;
+        right: 50%;
+        bottom: 0;
+
+        width: 52px;
+        height: 52px;
+        margin-right: calc((50vw - 20px) * -1);
+
+        color: #fff;
+        border-color: #333;
+        background: #333;
+    }
+
+
+    .wheelSlider-container .dots
+    {
+        display: flex;
+    }
+
+
+    .control_levels .person .info
+    {
+        gap: 12px;
+    }
+
+
+    .control_levels .person .link
+    {
+        margin-top: 8px;
+    }
+
+
+    .control_levels .bottom
+    {
+        display: none;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .list
+    {
+        gap: 80px;
+    }
+
+
+    .contacts_info .item
+    {
+        padding: 20px;
+    }
+
+
+    .contacts_info .item .city > *
+    {
+        font-size: 16px;
+
+        margin: 0 auto;
+        padding: 8px 16px;
+    }
+
+
+    .contacts_info .item .data
+    {
+        gap: 20px;
+    }
+
+
+    .contacts_info .item .label,
+    .contacts_info .item .val
+    {
+        font-size: 14px;
+    }
+
+
+    .contacts_info .item .phone .icon
+    {
+        width: 24px;
+        height: 24px;
+    }
+
+
+    .contacts_info .item .days
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .contacts_info .item .time
+    {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+
+    .contacts_info .item .map
+    {
+        height: 280px;
+    }
+
+
+    .contacts_info .item .map_wrap .link a
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        padding: 12px 28px;
+    }
+
+
+    .contacts_info .requisites > div
+    {
+        font-size: 14px;
+
+        justify-content: space-between;
+
+        width: 100%;
+
+        gap: 24px;
+    }
+
+
+    .contacts_info .requisites a
+    {
+        line-height: 20px;
+
+        padding: 8px 16px;
     }
 
 

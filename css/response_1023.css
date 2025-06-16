@@ -885,7 +885,8 @@
     }
 
 
-    .our_production .standarts
+    .our_production .standarts,
+    .our_production .smart_home
     {
         width: calc(100% - 348px);
     }
@@ -1060,6 +1061,70 @@
     .prices table td.price
     {
         width: 148px;
+    }
+
+
+
+    /*-------------------
+        Sub. services
+    -------------------*/
+    .sub_services .row > *
+    {
+        width: calc(33.333% - 10px);
+    }
+
+
+    .sub_services .row > *:last-child,
+    .sub_services .row > *:nth-last-child(2)
+    {
+        width: calc(50% - 10px);
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .item .data
+    {
+        width: 100%;
+    }
+
+
+    .contacts_info .item .city > *
+    {
+        font-size: 18px;
+    }
+
+
+    .contacts_info .item .phone
+    {
+        justify-content: flex-start;
+    }
+
+
+    .contacts_info .item .phone .btn
+    {
+        margin-left: 20px;
+    }
+
+
+    .contacts_info .item .map_wrap
+    {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+
+    .contacts_info .item .map
+    {
+        height: 360px;
+    }
+
+
+    .contacts_info .item .map_wrap .link
+    {
+        text-align: center;
     }
 
 

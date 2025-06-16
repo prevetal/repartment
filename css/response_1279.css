@@ -911,6 +911,12 @@
     }
 
 
+    .our_production .smart_home
+    {
+        width: 400px;
+    }
+
+
 
     /*--------------
         Fittings
@@ -1048,6 +1054,141 @@
     .prices table td.price
     {
         width: 220px;
+    }
+
+
+
+    /*-------------------
+        Sub. services
+    -------------------*/
+    .sub_services .row
+    {
+        flex-wrap: wrap;
+
+        margin-left: -10px;
+
+        gap: 10px 0;
+    }
+
+
+    .sub_services .row > *
+    {
+        flex: none;
+
+        width: calc(25% - 10px);
+        margin-left: 10px;
+    }
+
+
+    .sub_services .row > *:last-child
+    {
+        width: calc(100% - 10px);
+        min-height: 200px;
+    }
+
+
+    .sub_services .item
+    {
+        min-height: 400px;
+    }
+
+
+    .sub_services .item .desc
+    {
+        display: none;
+    }
+
+
+    .sub_services .row > *:hover
+    {
+        flex-basis: auto;
+    }
+
+
+
+    /*--------------------
+        Control levels
+    --------------------*/
+    .control_levels .wheelSlider-container
+    {
+        width: 320px;
+    }
+
+
+    .control_levels .bottom
+    {
+        margin-top: 32px;
+    }
+
+
+    .control_levels .bottom .text
+    {
+        width: 268px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .list
+    {
+        gap: 40px;
+    }
+
+
+    .contacts_info .item .data
+    {
+        width: 352px;
+    }
+
+
+    .contacts_info .item .city > *
+    {
+        font-size: 18px;
+    }
+
+
+    .contacts_info .item .label,
+    .contacts_info .item .val
+    {
+        font-size: 15px;
+    }
+
+
+    .contacts_info .item .time
+    {
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+
+    .contacts_info .item .map_wrap
+    {
+        width: calc(100% - 400px);
+    }
+
+
+    .contacts_info .item .map
+    {
+        height: 406px;
+    }
+
+
+    .contacts_info .item .map_wrap .link a
+    {
+        font-size: 15px;
+        line-height: 21px;
+
+        padding: 15px 31px;
+    }
+
+
+    .contacts_info .requisites > div
+    {
+        font-size: 15px;
+
+        gap: 28px;
     }
 
 
