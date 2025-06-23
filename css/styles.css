@@ -1224,6 +1224,7 @@ header .phones .socials .tg_link .icon
 {
     width: 19px;
     height: 16px;
+    margin-right: 3px;
 }
 
 header .phones .socials .vk_link .icon
@@ -1780,7 +1781,7 @@ body.lock .mob_header
 
     text-decoration: none;
 
-    color: currentColor;
+    color: #5B5B5B;
     border-radius: 50%;
     background: rgba(255, 255, 255, .90);
 }
@@ -1802,6 +1803,7 @@ body.lock .mob_header
 {
     width: 20px;
     height: 16px;
+    margin-right: 3px;
 }
 
 
@@ -2136,6 +2138,7 @@ body.lock .mob_header
 {
     width: 20px;
     height: 16px;
+    margin-right: 3px;
 }
 
 
@@ -4003,6 +4006,7 @@ body.lock .mob_header
 {
     width: 20px;
     height: 16px;
+    margin-right: 3px;
 }
 
 
@@ -4219,6 +4223,7 @@ body.lock .mob_header
 {
     width: 20px;
     height: 16px;
+    margin-right: 3px;
 }
 
 
@@ -4380,6 +4385,7 @@ body.lock .mob_header
 {
     width: 20px;
     height: 16px;
+    margin-right: 3px;
 }
 
 
@@ -4650,6 +4656,7 @@ body.lock .mob_header
 {
     width: 20px;
     height: 16px;
+    margin-right: 3px;
 }
 
 
@@ -5184,6 +5191,7 @@ body.lock .mob_header
 {
     width: 20px;
     height: 16px;
+    margin-right: 3px;
 }
 
 
@@ -7011,7 +7019,7 @@ body.lock .mob_header
 
     text-decoration: none;
 
-    color: currentColor;
+    color: #5b5b5b;
     border-radius: 50%;
     background: rgba(255, 255, 255, .90);
 }
@@ -7033,6 +7041,7 @@ body.lock .mob_header
 {
     width: 20px;
     height: 16px;
+    margin-right: 3px;
 }
 
 
@@ -7550,6 +7559,7 @@ footer .socials .tg_link .icon
 {
     width: 19px;
     height: 16px;
+    margin-right: 3px;
 }
 
 footer .socials .vk_link .icon
